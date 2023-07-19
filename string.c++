@@ -32,8 +32,11 @@ int main()
     app.erase(15); // удаляем из app начиная с 15 позиции и до конца строки
     cout<<"app after app.erase(15) "<<app<<endl;
     cout<<"New size app="<<app.size()<<endl;
+    cout<<"10 item app (first elem 0) ="<<app.at(10)<<endl;//показываем 10 элемент (нумерация с 0)
+    app.at(10)='s';
+    cout<<"10 item app after app.at(10)='s' = "<<app.at(10)<<endl; // изменяем значение 10 элемента app на s
 
-
+    
     cin >>in;
     return 0;
 }
