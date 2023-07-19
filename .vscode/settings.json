@@ -11,5 +11,10 @@
         "string": "cpp",
         "vector": "cpp",
         "unordered_map": "cpp"
-    }
+    },
+    "projectManager.git.baseFolders": [
+        "C:\\Users\\Selfrock\\Desktop\\C++",
+        "C:\\Users\\Selfrock\\Desktop\\C++\\Samples",
+        "C:\\Users\\Selfrock\\Desktop\\C++\\01"
+    ]
 }
