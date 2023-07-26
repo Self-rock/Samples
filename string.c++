@@ -1,8 +1,8 @@
 #include <iostream>
 #include <string>
-
+#include <algorithm>
 using namespace std;
-//999
+
 int main()
 {
     string S, in, app, ins; 
@@ -64,7 +64,18 @@ int main()
     app.swap(ins); // меняем местами содержимое app и ins
     cout<<"app = "<<app<<endl;
     cout<<"ins = "<<ins<<endl;
-
+/*  cout << "Исходный app " <<app << endl;
+    /*transform()  требует наличия #include <algorithm>, app.begin() начало откуда берем,
+    app.end() конец, откуда берем,  еще один app.begin() начало куда кладем и во что
+    превращаем, tolower в нижний регистр, toupper в верхний регистр */
+    transform(app.begin(),app.end(),app.begin(),::tolower);
+    cout << "app после transform(app.begin(),app.end(),app.begin(),::tolower) " <<app << endl;
+    transform(app.begin(),app.end(),app.begin(),::toupper);
+    cout << "app после transform(app.begin(),app.end(),app.begin(),::toupper) " <<app << endl;
+    string unsort = {"gKaD5b5#&mvH6c4"};
+    cout << "Исходный unsort " <<unsort << endl;
+    sort(unsort.begin(), unsort.end());// сортировка массива string (на русских буквах виснет)
+    cout << "unsort после сортировки " <<unsort << endl; */
     
     cin >>in;
     return 0;
