@@ -75,7 +75,8 @@ int main()
     string unsort = {"gKaD5b5#&mvH6c4"};
     cout << "Исходный unsort " <<unsort << endl;
     sort(unsort.begin(), unsort.end());// сортировка массива string (на русских буквах виснет)
-    cout << "unsort после сортировки " <<unsort << endl; */
+    cout << "unsort после сортировки " <<unsort << endl; 
+    */
     
     cin >>in;
     return 0;
