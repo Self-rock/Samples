@@ -23,16 +23,16 @@ int main(int argc, const char** argv) {
     cout << "ivec.at(0)= "<< ivec.at(0) << endl;
     cout << "svec[0]= "<< svec[0] << endl;
     cout << "svec.at(0)= "<< svec.at(0) << endl;
-    if (ivec == fiveInt) cout << "ivec и  fiveInt Они равны!"<< endl;// сравнили вектора
-    else {cout << "ivec и  fiveInt Они не равны"<< endl; }
+    if (ivec == fiveInt) cout << "ivec and  fiveInt they equal!"<< endl;// сравнили вектора
+    else {cout << "ivec and  fiveInt they not equal"<< endl; }
     cout << "svec.size() = "<< svec.size() << endl;//показываем размер вектора svec
     svec.push_back("Nova");
     cout << "svec.size() after svec.push_back(Nova) = "<< svec.size() << endl;//показываем новый размер вектора svec
     cout << "svec.at(5)= "<< svec.at(5) << endl;
     svec.pop_back();
     cout << "svec.size() after svec.pop_back() = "<< svec.size() << endl;//показываем новый размер вектора svec
-    if (fiveInt.empty()) cout << "fiveInt пуст"<< endl;// проверяем не имеет ли вектот нулевой размер 
-    cout << "fiveInt не пуст"<< endl;
+    if (fiveInt.empty()) cout << "fiveInt empty"<< endl;// проверяем не имеет ли вектот нулевой размер 
+    cout << "fiveInt not empty"<< endl;
     cout << "svec.size() = "<< svec.size() << endl;
     svec.insert(svec.begin(), "Nova"); //вставляем элемент в начало вектора
     svec.insert(svec.end(), "Korova");//вставляем элемент в конец вектора
