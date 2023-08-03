@@ -78,6 +78,10 @@ int main()
     cout << "Исходный unsort " <<unsort << endl;
     sort(unsort.begin(), unsort.end());// сортировка массива string (на русских буквах виснет)
     cout << "unsort после сортировки " <<unsort << endl; 
+    cout << "stoi(125) " <<stoi("125") << endl;// строку в целое число
+    cout << "to_string(85364) " <<to_string(85364) << endl; // целое число в строку
+
+
     
     
 	
