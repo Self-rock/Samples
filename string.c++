@@ -80,7 +80,8 @@ int main()
     cout << "unsort после сортировки " <<unsort << endl; 
     cout << "stoi(125) " <<stoi("125") << endl;// строку в целое число
     cout << "to_string(85364) " <<to_string(85364) << endl; // целое число в строку
-
+    std::size_t found = app.find("-*-");//ищем строку -*- и сохраняем ее индекс в found 
+    cout << "-*- in app find at " <<found << endl;
 
     
     
