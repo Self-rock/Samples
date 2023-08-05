@@ -1,6 +1,6 @@
 #include <iostream>
 #include <vector>
-
+#include <algorithm> //необходим для сортировки вектора
 using namespace std;
 
 int main(int argc, const char** argv) {
@@ -46,6 +46,19 @@ int main(int argc, const char** argv) {
     cout <<"svec.capacity()= " <<svec.capacity()<< endl;//capacity - вместимость коллекции 
     //определяет реальный размер - то есть размер буфера коллекции, а не то, сколько в нем хранится элементов
     cout << "ivec= "<< ivec[0] << endl;
-    
+    //выводим вектор 
+    cout << "ivec полностью = " << endl; 
+    for (auto i : ivec) {
+        std::cout << i << " ";
+        } 
+    cout << endl;
+    // сортируем вектор
+    sort(ivec.begin(), ivec.end());
+    //выводим содержимое вектора после сортировки
+    cout << "ivec после сортировки = " << endl; 
+    for (auto i : ivec) {
+        std::cout << i << " ";
+        } 
+    cout << endl;
     return 0;
 }

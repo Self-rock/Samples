@@ -10,7 +10,8 @@
         "deque": "cpp",
         "string": "cpp",
         "vector": "cpp",
-        "unordered_map": "cpp"
+        "unordered_map": "cpp",
+        "algorithm": "cpp"
     },
     "projectManager.git.baseFolders": [
         "C:\\Users\\Selfrock\\Desktop\\C++",
