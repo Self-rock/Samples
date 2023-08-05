@@ -52,7 +52,7 @@ int main(int argc, const char** argv) {
         std::cout << i << " ";
         } 
     cout << endl;
-    // сортируем вектор
+    // сортируем вектор (для сортировки нужен #include <algorithm>)
     sort(ivec.begin(), ivec.end());
     //выводим содержимое вектора после сортировки
     cout << "ivec после сортировки = " << endl; 
