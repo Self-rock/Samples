@@ -3,6 +3,14 @@
 #include <algorithm> //необходим для сортировки вектора
 using namespace std;
 
+template <typename T>
+void VecToCout(std::vector<T>& v){
+for (auto i : v) {
+        std::cout << i << " ";
+        } 
+    cout << endl;
+}
+
 int main(int argc, const char** argv) {
     vector <int> ivec={1,2,3,4,5,6,7,8,9};//создаем вектор  целых чисел
     vector <string> svec={"Vova","V","o","v","a"};//создаем вектор строк
@@ -48,24 +56,17 @@ int main(int argc, const char** argv) {
     cout << "ivec= "<< ivec[0] << endl;
     //выводим вектор 
     cout << "ivec полностью = " << endl; 
-    for (auto i : ivec) {
-        std::cout << i << " ";
-        } 
-    cout << endl;
+    VecToCout(ivec);
     // сортируем вектор (для сортировки нужен #include <algorithm>)
     sort(ivec.begin(), ivec.end());
     //выводим содержимое вектора после сортировки
     cout << "ivec после сортировки = " << endl; 
-    for (auto i : ivec) {
-        std::cout << i << " ";
-        } 
-    cout << endl;
+    VecToCout(ivec);
     vector<int> v={1,2,3,4,5,6,7,8,9};//для след строки нужен #include <algorithm>
     for_each(v.begin(), v.end(), [](int& a){a = a*a;});//умножаем каждый элемент на самого себя
     cout << "vector v after for_each(v.begin(), v.end(), [](int& a){a = a*a;})= "; 
-    for (auto i : v) {
-        std::cout << i << " ";
-        } 
-    cout << endl;
+    VecToCout(v);
+    
+
     //return 0;
 }
