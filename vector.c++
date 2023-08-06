@@ -60,5 +60,12 @@ int main(int argc, const char** argv) {
         std::cout << i << " ";
         } 
     cout << endl;
-    return 0;
+    vector<int> v={1,2,3,4,5,6,7,8,9};//для след строки нужен #include <algorithm>
+    for_each(v.begin(), v.end(), [](int& a){a = a*a;});//умножаем каждый элемент на самого себя
+    cout << "vector v after for_each(v.begin(), v.end(), [](int& a){a = a*a;})= "; 
+    for (auto i : v) {
+        std::cout << i << " ";
+        } 
+    cout << endl;
+    //return 0;
 }
