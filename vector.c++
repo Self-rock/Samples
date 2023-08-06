@@ -65,7 +65,9 @@ int main(int argc, const char** argv) {
     vector<int> v={1,2,3,4,5,6,7,8,9};//для след строки нужен #include <algorithm>
     for_each(v.begin(), v.end(), [](int& a){a = a*a;});//умножаем каждый элемент на самого себя
     cout << "vector v after for_each(v.begin(), v.end(), [](int& a){a = a*a;})= "; 
-    VecToCout(v);
+    VecToCout(v);    
+    cout << "вывод вектора через for_each(v.begin(), v.end(), [](int a){cout << a << ' ';}) " << endl;
+    for_each(v.begin(), v.end(), [](int a){cout << a << ' ';});//вывод вектора через for_each
     
 
     //return 0;
