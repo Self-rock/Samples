@@ -82,9 +82,11 @@ int main()
     cout << "to_string(85364) " <<to_string(85364) << endl; // целое число в строку
     std::size_t found = app.find("-*-");//ищем строку -*- и сохраняем ее индекс в found 
     cout << "-*- in app find at " <<found << endl;
-
-    
-    
+	cout << "app " <<app << endl;
+    if (isupper(app[0])) app[0] = tolower(app[0]); // если нулевой элемент app в верхнем регистре, делаем его в нижний регистр
+    cout << "app after if (isupper(app[0])) app[0] = tolower(app[0])" <<app << endl;
+	if (islower(app[0])) app[0] = toupper(app[0]); // если нулевой элемент app в нижнем регистре, делаем его в верхний регистр
+    cout << "app after if (islower(app[0])) app[0] = toupper(app[0])" <<app << endl;
 	
     cin >>in;
     return 0;
