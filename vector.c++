@@ -71,7 +71,7 @@ int main(int argc, const char** argv) {
     vector <int> tmp;
     cout << endl;
     unique_copy (v.begin(), v.end(), std :: back_inserter(tmp));//поиск уникальных элементов 
-    //и вставка их в конец другого вектори или списка    
+    //и вставка их в конец вектора или списка    
     cout << "вектор tmp после  unique_copy (v.begin(), v.end(), std :: back_inserter(tmp)); " << endl;
     VecToCout(tmp);
 
