@@ -87,6 +87,8 @@ int main()
     cout << "app after if (isupper(app[0])) app[0] = tolower(app[0])" <<app << endl;
 	if (islower(app[0])) app[0] = toupper(app[0]); // если нулевой элемент app в нижнем регистре, делаем его в верхний регистр
     cout << "app after if (islower(app[0])) app[0] = toupper(app[0])" <<app << endl;
+	//считаем количество символов в массиве app типа string
+	cout <<"count S in string app " <<count(app.begin(),app.end(),'S')<< endl;
 	
     cin >>in;
     return 0;

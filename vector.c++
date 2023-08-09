@@ -68,8 +68,13 @@ int main(int argc, const char** argv) {
     VecToCout(v);    
     cout << "вывод вектора через for_each(v.begin(), v.end(), [](int a){cout << a << ' ';}) " << endl;
     for_each(v.begin(), v.end(), [](int a){cout << a << ' ';});//вывод вектора через for_each
-    
-    
+    vector <int> tmp;
+    cout << endl;
+    unique_copy (v.begin(), v.end(), std :: back_inserter(tmp));    
+    cout << "вектор tmp после  unique_copy (v.begin(), v.end(), std :: back_inserter(tmp)); " << endl;
+    VecToCout(tmp);
+
+
     cout << endl;
 
 
