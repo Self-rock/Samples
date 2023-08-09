@@ -70,7 +70,8 @@ int main(int argc, const char** argv) {
     for_each(v.begin(), v.end(), [](int a){cout << a << ' ';});//вывод вектора через for_each
     vector <int> tmp;
     cout << endl;
-    unique_copy (v.begin(), v.end(), std :: back_inserter(tmp));    
+    unique_copy (v.begin(), v.end(), std :: back_inserter(tmp));//поиск уникальных элементов 
+    //и вставка их в конец другого вектори или списка    
     cout << "вектор tmp после  unique_copy (v.begin(), v.end(), std :: back_inserter(tmp)); " << endl;
     VecToCout(tmp);
 
