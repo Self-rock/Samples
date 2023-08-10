@@ -89,7 +89,12 @@ int main()
     cout << "app after if (islower(app[0])) app[0] = toupper(app[0])" <<app << endl;
 	//считаем количество символов в массиве app типа string
 	cout <<"count S in string app " <<count(app.begin(),app.end(),'S')<< endl;
-	
+    int first = 891, second = 65456;// смешаные значения и символы в строку
+    string heshmesh = std::to_string(first) + '/' + std::to_string(second);
+    cout << "heshmesh = " <<heshmesh << endl;//считать евсли выполняется условие (return 'S'==c)
+	cout << "in app have S " << std::count_if(app.begin(),app.end(),[](char c){ return 'S'==c;})<< endl;
+
+
     cin >>in;
     return 0;
 }
