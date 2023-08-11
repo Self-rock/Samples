@@ -74,7 +74,13 @@ int main(int argc, const char** argv) {
     //и вставка их в конец вектора или списка    
     cout << "вектор tmp после  unique_copy (v.begin(), v.end(), std :: back_inserter(tmp)); " << endl;
     VecToCout(tmp);
-
+    tmp.assign(18,9);
+    cout << "вектор tmp после  tmp.assign(18,9) " << endl;
+    VecToCout(tmp);
+    tmp.clear();
+    cout << "вектор tmp после  tmp.clear() " << endl;
+    VecToCout(tmp);
+    cout << "tmp.size() после tmp.clear() = "<< tmp.size() << endl;
 
     cout << endl;
 
