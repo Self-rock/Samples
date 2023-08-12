@@ -28,7 +28,7 @@ int main()
     app.append(S, 4, 5); //добавляем в конец строки app 5 симвовлов строки S, начиная с позиции 4 (строки S) 
     cout<<"app after app.append(S, 4, 5) "<<app<<endl;
     app.erase(24, 25); // удаляем из app 25 символов начиная с 24 позиции
-    cout<<"app after app.erase(25, 25) "<<app<<endl;
+    cout<<"app after app.erase(24, 25) "<<app<<endl;
     app.erase(15); // удаляем из app начиная с 15 позиции и до конца строки
     cout<<"app after app.erase(15) "<<app<<endl;
     cout<<"New size app="<<app.size()<<endl;
