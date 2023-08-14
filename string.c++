@@ -94,7 +94,7 @@ int main()
     cout << "heshmesh = " <<heshmesh << endl;//считать евсли выполняется условие (return 'S'==c)
 	cout << "in app have S " << std::count_if(app.begin(),app.end(),[](char c){ return 'S'==c;})<< endl;
     cout << "app= " <<app << endl;
-    remove(app.begin(), app.end(), '-'), app.end();
+    remove(app.begin(), app.end(), '-');// app.end(); //удаление - из массива app
     cout << "app after remove(app.begin(), app.end(), '-'), app.end() = " <<app << endl;
 
     cin >>in;
