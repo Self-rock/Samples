@@ -93,7 +93,9 @@ int main()
     string heshmesh = std::to_string(first) + '/' + std::to_string(second);
     cout << "heshmesh = " <<heshmesh << endl;//считать евсли выполняется условие (return 'S'==c)
 	cout << "in app have S " << std::count_if(app.begin(),app.end(),[](char c){ return 'S'==c;})<< endl;
-    
+    cout << "app= " <<app << endl;
+    remove(app.begin(), app.end(), '-'), app.end();
+    cout << "app after remove(app.begin(), app.end(), '-'), app.end() = " <<app << endl;
 
     cin >>in;
     return 0;
