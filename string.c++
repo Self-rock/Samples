@@ -96,7 +96,8 @@ int main()
     cout << "app= " <<app << endl;
     remove(app.begin(), app.end(), '-');// app.end(); //удаление - из массива app
     cout << "app after remove(app.begin(), app.end(), '-'), app.end() = " <<app << endl;
-
+    reverse(app.begin(), app.end()); // разворечиваем послед символов в массиве на противоположную
+    cout << "app after reverse(app.begin(), app.end()) = " <<app << endl;
     cin >>in;
     return 0;
 }
