@@ -27,9 +27,10 @@ int main()
 	//вывод map типа стринг инт в консоль
 	outmap (years);
 	
-	//удаление элемента Rome
+	//удаление элемента Rome (удаление по ключу)
 	years.erase("Rome"); 
 	outmap (years);
+	
 	
 	cout<<"Hello World";
     return 0;
