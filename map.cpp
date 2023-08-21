@@ -27,9 +27,9 @@ int main()
 		{"Моршанск", 135}
     };
 	
-	//вывод значения по ключу "Rome"
+	//вывод значения map по ключу "Rome"
 	cout <<"years[Rome]" <<years["Rome"]<<endl;
-	//вывод значения по ключу из стринга London
+	//вывод значения map по ключу из стринга London
 	string London ={"London"};
 	cout <<"years[London]" <<years[London]<<endl;
 
