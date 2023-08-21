@@ -30,6 +30,9 @@ int main()
 	//удаление элемента Rome (удаление по ключу)
 	years.erase("Rome"); 
 	outmap (years);
+
+	//вывод размера map years
+	cout << "map size = " <<years.size() << endl;
 	
 	
 	cout<<"Hello World";
