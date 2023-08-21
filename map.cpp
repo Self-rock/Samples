@@ -59,12 +59,24 @@ int main()
 	years.emplace("ten", 10);
 	outmap (years);
 
+	//добавляем элемент в map years
+	years["Halo"] = 256;
+	outmap (years);	
+
 	//вывод элемента по индексу
 	string str ={"Moscow"};
 	cout << "years.at(str) " <<years.at(str) << endl;
 	cout << "years.at(Moscow) " <<years.at("Moscow") << endl;
 	
-
+	//изменяем значение элемента map по индексу
+	years["Halo"]=0;
+	cout << "after years[Halo]=0 " <<years["Halo"] << endl;
+	
+	//копируем map years в map lightyears
+	std::map<std::string, int> lightyears;
+	lightyears = years;
+	cout << "lightyears= " << endl;
+	outmap (lightyears);	
 
 	cout<<"Hello World";
     return 0;
