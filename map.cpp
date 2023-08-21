@@ -5,10 +5,13 @@ using namespace std;
 
 //вывод map в консоль
 	void outmap (map<std::string, int> m){
+	//создает итератор it указывающий на начало map m
 	std::map<std::string, int>::iterator it = m.begin();
+	//цикл, пока итератор it не будет указывать на конец map m
 	while (it != m.end())
   {
-    cout << "Key: " << it->first << ", Value: " << it->second << endl;
+    //it->first указывает на ключ, it->second на связаное с ним значение
+	cout << "Key: " << it->first << ", Value: " << it->second << endl;
     ++it;
   }
   std::cout <<endl;
