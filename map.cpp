@@ -26,6 +26,13 @@ int main()
         {"London", 47},
 		{"Моршанск", 135}
     };
+	
+	//вывод значения по ключу "Rome"
+	cout <<"years[Rome]" <<years["Rome"]<<endl;
+	//вывод значения по ключу из стринга London
+	string London ={"London"};
+	cout <<"years[London]" <<years[London]<<endl;
+
 	//вывод map типа стринг инт в консоль
 	outmap (years);
 
