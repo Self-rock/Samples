@@ -34,6 +34,10 @@ int main()
 	years.erase("Rome"); 
 	outmap (years);
 
+	//добавляем элемент в map years
+	years.insert(pair<string, int>("Kenigsberg", 40));
+	outmap (years);
+
 	//вывод размера map years
 	cout << "map size = " <<years.size() << endl;
 	
