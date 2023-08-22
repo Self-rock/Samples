@@ -76,7 +76,16 @@ int main()
 	std::map<std::string, int> lightyears;
 	lightyears = years;
 	cout << "lightyears= " << endl;
-	outmap (lightyears);	
+	outmap (lightyears);
+
+	//проверяем на наличие значения по ключу
+	if (years.find("ten") != years.end()) cout << "Ключ 'ten' найден в 'years'" << endl;
+    else cout << "Ключа 'ten' нет в 'years'" << endl;	
+
+	//перебор элементов map по циклу
+	cout << "map in for " << endl;
+	for (const auto& element : years)    
+	cout << element.first << "\t" << element.second << endl;
 
 	cout<<"Hello World";
     return 0;
