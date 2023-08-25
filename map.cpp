@@ -71,7 +71,8 @@ int main()
 	//изменяем значение элемента map по индексу
 	years["Halo"]=0;
 	cout << "after years[Halo]=0 " <<years["Halo"] << endl;
-	
+	years["Halo"]++;//увеличиваем значение на +1
+	cout << "after years[Halo]++ " <<years["Halo"] << endl;
 	//копируем map years в map lightyears
 	std::map<std::string, int> lightyears;
 	lightyears = years;
