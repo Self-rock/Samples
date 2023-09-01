@@ -59,6 +59,8 @@ int main(int argc, const char** argv) {
     VecToCout(ivec);
     // сортируем вектор (для сортировки нужен #include <algorithm>)
     sort(ivec.begin(), ivec.end());
+    //сортировка в обратном порядке (проверено не здесь)
+    //sort(ivec.rbegin(), ivec.rend());
     //выводим содержимое вектора после сортировки
     cout << "ivec после сортировки = " << endl; 
     VecToCout(ivec);
