@@ -65,6 +65,7 @@ int main(int argc, const char** argv) {
     //is_sorted(array.begin(), array.end());
     //is_sorted(std::rbegin(ivec), std::rend(ivec))//если ivec отсортирован по убыванию, вернет true
     //is_sorted(array.rbegin(),array.rend())
+    //reverse(ivec.begin(), ivec.end());//разворачивает массив наоборот (не проверено)
     //выводим содержимое вектора после сортировки
     cout << "ivec после сортировки = " << endl; 
     VecToCout(ivec);
