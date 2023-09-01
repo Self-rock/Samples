@@ -61,6 +61,8 @@ int main(int argc, const char** argv) {
     sort(ivec.begin(), ivec.end());
     //сортировка в обратном порядке (проверено не здесь)
     //sort(ivec.rbegin(), ivec.rend());
+    //is_sorted(begin(ivec), end(ivec));//если ivec отсортирован по возрастанию, вернет true
+    //is_sorted(std::rbegin(ivec), std::rend(ivec))//если ivec отсортирован по убыванию, вернет true
     //выводим содержимое вектора после сортировки
     cout << "ivec после сортировки = " << endl; 
     VecToCout(ivec);
