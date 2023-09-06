@@ -3,7 +3,7 @@
 using namespace std;
 
 template <typename T>
-void listprint(T a) {
+void listprint(T& a) {
 for (auto i:a) cout <<i<<endl;
 }
 
