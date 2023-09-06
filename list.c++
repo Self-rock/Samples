@@ -25,7 +25,9 @@ int main()
     cout <<"listint.size() " << listint.size()<<endl;//поразываем размер спаска
     cout<<"listint"<<endl;
     listprint(listint);
-    
+    listint.assign(5, 88);
+    cout<<"listint after listint.assign(5, 88)"<<endl;
+    listprint(listint);
     
     
     cout<<"Hello World"<<endl;
