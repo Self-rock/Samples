@@ -9,21 +9,25 @@ for (auto i:a) cout <<i<<endl;
 
 int main()
 {
-    list<int> listint;
-    list<int> listini={88,99,564};
+    list<int> listint;//создаем список int
+    list<int> listini={88,99,564};//создаем и инициализируем список int
     cout<<"listini"<<endl;
     listprint(listini);
-    list<string> liststring;
-    liststring.push_back("test1");
+    list<string> liststring;//создаем список string
+    liststring.push_back("test1");//добавляем в зад списка значение
     liststring.push_back("test2");
-     listprint(liststring);    
-    listint.push_back(2);
-    listint.emplace_back(4);
-    listint.push_front(5);
-    listint.emplace_front();
-    cout <<"listint.size() " << listint.size()<<endl;
+    cout<<"liststring"<<endl;
+    listprint(liststring);    
+    listint.push_back(2);//добавляем в зад списка значение
+    listint.emplace_back(4);//добавляем в зад списка значение
+    listint.push_front(5);//добавляем в перед списка значение
+    listint.emplace_front();//добавляем в перед списка значение 0
+    cout <<"listint.size() " << listint.size()<<endl;//поразываем размер спаска
+    cout<<"listint"<<endl;
     listprint(listint);
-    //for (auto i:listint) cout <<i<<endl;
+    
+    
+    
     cout<<"Hello World"<<endl;
 
     return 0;
