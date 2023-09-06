@@ -10,6 +10,9 @@ for (auto i:a) cout <<i<<endl;
 int main()
 {
     list<int> listint;
+    list<int> listini={88,99,564};
+    cout<<"listini"<<endl;
+    listprint(listini);
     list<string> liststring;
     liststring.push_back("test1");
     liststring.push_back("test2");
