@@ -27,11 +27,18 @@ int main()
 	intset.emplace(889);//добавляем элемент
     cout<<"intset after intset.emplace(889)"<<endl;
     printset(intset);
-
     intset.insert(5525);//добавляем элемент
     cout<<"intset after intset.insert(5525)"<<endl;
+    printset(intset);    
+    intset.erase(982);//удаляем элемент по значению
+    cout<<"intset after intset.erase(982)"<<endl;
+    printset(intset);
+    //intset.erase(intset.begin(),intset.end());//удаляет все содержимое set
+    intset.erase(intset.begin());//удаляем первый элемент intset (последний по end не удаляет)
+    cout<<"intset after intset.erase(intset.begin())"<<endl;
     printset(intset);
 
+   
     cout<<"Hello World";
 
     return 0;
