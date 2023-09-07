@@ -46,7 +46,7 @@ int main()
     intset.erase(it);//удаляем значение 889 по итератору
     cout<<"intset after intset.erase(it))"<<endl;
     printset(intset);
-
+    
 
     cout<<"Hello World";
 
