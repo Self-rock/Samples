@@ -40,9 +40,14 @@ int main()
     //intset.clear();//очищает все содержимое set
     //cout<<"intset after intset.clear()"<<endl;
     //printset(intset);
-    
-    
-    
+    //ищем элемент в сете
+    if (intset.find(889)!=intset.end()) cout << "i find element 889"<<endl;
+    set<int>::iterator it = intset.find(889);//создаем итератор и заполняем его значение по поиску
+    intset.erase(it);//удаляем значение 889 по итератору
+    cout<<"intset after intset.erase(it))"<<endl;
+    printset(intset);
+
+
     cout<<"Hello World";
 
     return 0;
