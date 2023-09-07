@@ -4,7 +4,7 @@
 using namespace std; 
 
 template <typename T>
-void listset(T& a) {
+void printset(T& a) {
 for (auto i:a) cout <<i<<endl;
 }
 
@@ -12,9 +12,26 @@ int main()
 {
     //set<int> s (v.begin(), v.end());//создание с заполнением из вектора
     set<int> intset ={1,56,982,15454,34,7,1};
-    listset(intset);
+    printset(intset);
     set<string> stringset={"first","second","third","meny"};
-    listset(stringset);
+    printset(stringset);
+    set<int> emptyset;
+    if (emptyset.empty()) cout<<"emptyset empty"<<endl;//проверяем set на пустоту
+    cout<<"size intset="<<intset.size()<<endl;//определяем размер set
+    intset.swap(emptyset);//меняем содержимое intset и emptyset местами
+    cout<<"emptyset after intset.swap(emptyset) ="<<endl;
+    printset(emptyset);
+    intset.swap(emptyset);//меняем обратно
+    cout<<"intset after repeat intset.swap(emptyset)="<<endl;
+    printset(intset);
+	intset.emplace(889);//добавляем элемент
+    cout<<"intset after intset.emplace(889)"<<endl;
+    printset(intset);
+
+    intset.insert(5525);//добавляем элемент
+    cout<<"intset after intset.insert(5525)"<<endl;
+    printset(intset);
+
     cout<<"Hello World";
 
     return 0;
