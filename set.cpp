@@ -37,8 +37,12 @@ int main()
     intset.erase(intset.begin());//удаляем первый элемент intset (последний по end не удаляет)
     cout<<"intset after intset.erase(intset.begin())"<<endl;
     printset(intset);
-
-   
+    //intset.clear();//очищает все содержимое set
+    //cout<<"intset after intset.clear()"<<endl;
+    //printset(intset);
+    
+    
+    
     cout<<"Hello World";
 
     return 0;
