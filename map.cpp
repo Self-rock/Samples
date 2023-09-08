@@ -91,6 +91,15 @@ int main()
 	for (const auto& element : years)    
 	cout << element.first << "\t" << element.second << endl;
 
+	//перебор элементов map по циклу for each
+	cout << "map in for each " << endl;
+	for (auto i:years) {
+		cout << "map in for each i.first " <<i.first << endl;
+		cout << "map in for each i.second " <<i.second << endl;
+		if (i.second==1147) cout << "1147 ears, it Moscow " <<i.second << endl;
+	}
+
+
 	cout<<"Hello World";
     return 0;
 }
