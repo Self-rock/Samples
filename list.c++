@@ -104,11 +104,15 @@ int main()
     listint.sort();
     cout<<"listint after listint.sort()"<<endl;
     listprint(listint);
-
     list<int> emptylistint;
     //проверяем не пустой ли список emptylistint
     if (emptylistint.empty()) cout<<"emptylistint is empty"<<endl;
-    cout<<"Hello World"<<endl;
+    list<int>::iterator it=listint.begin();//создаем итератор и устанавливаем его на начело списка
+    advance(it,3);//устанавливаем итератор на 3 элемент
+    cout<<"print el-t list after iterator"; //выводим значение эл-та списка
+    cout<<"it=listint.begin() and advance(it,3) "<<*it<<endl; // по итератору
+    
 
+    cout<<"Hello World"<<endl;
     return 0;
 }
