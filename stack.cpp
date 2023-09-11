@@ -34,5 +34,6 @@ int main(int argc, char const *argv[])
     cout <<"st2.size() after st.swap(st2); = "<<st2.size()<<endl;
     if (st.empty()) cout <<"st empty"<<endl;
     
+    
     return 0;
 }
