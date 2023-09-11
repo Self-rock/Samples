@@ -1,5 +1,6 @@
 #include <iostream>
 #include <algorithm>
+#include <functional>//для использования записи вида function<int(int,int)> sum2
 using namespace std;
 
 int main()
@@ -20,6 +21,9 @@ int main()
     auto sum1 = [](int x,int y){return x+y;};//лямбда с типом auto
     cout << "sum="<<sum1(3,9)<< endl;
         
+    function<int(int,int)> sum2 = [](int x,int y){return x+y;};//лямбда с типом function<int(int,int)>
+    cout << "sum2="<<sum1(153,7)<< endl;
+    
     int i=22;
     int j=6;
     //с захватом внешних переменных
