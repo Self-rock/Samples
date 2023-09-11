@@ -23,8 +23,8 @@ int main()
     int i=22;
     int j=6;
     //с захватом внешних переменных
-    auto sum3 = [i,&j]{return i+j;};
-    cout << "sum3="<<sum3()<< endl;
+    auto sum3 = [i,&j]{return i+j;};//i копируется внутрь лямбда функции 
+    cout << "sum3="<<sum3()<< endl;//&j доступ по ссылке к внешней переменной
     
     //со встроеными аргументами
     int sum4 = [](int x,int y){return x+y;}(17,364);
