@@ -42,7 +42,9 @@
         "stdexcept": "cpp",
         "streambuf": "cpp",
         "typeinfo": "cpp",
-        "map": "cpp"
+        "map": "cpp",
+        "list": "cpp",
+        "set": "cpp"
     },
     "projectManager.git.baseFolders": [
         "C:\\Users\\Selfrock\\Desktop\\C++",
