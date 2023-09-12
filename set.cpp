@@ -8,7 +8,7 @@ for (auto i:a) cout <<i<<endl;
 }
 
 int main()
-{   std::string strtomap = {"123"};//заполнение map из стринга
+{   string strtomap = {"123"};//заполнение map из стринга
     set<char> set1(begin(strtomap), end(strtomap));
     cout<<"from string to map, map now"<<endl;
     printset(set1); 
