@@ -1,6 +1,5 @@
 #include <set>
 #include <iostream>
-
 using namespace std; 
 
 template <typename T>
@@ -9,7 +8,11 @@ for (auto i:a) cout <<i<<endl;
 }
 
 int main()
-{      
+{   std::string strtomap = {"123"};//заполнение map из стринга
+    set<char> set1(begin(strtomap), end(strtomap));
+    cout<<"from string to map, map now"<<endl;
+    printset(set1); 
+    cout<<endl;    
     //set<int> s (v.begin(), v.end());//создание с заполнением из вектора
     set<int> intset ={1,56,982,15454,34,7,1};
     printset(intset);
@@ -46,10 +49,7 @@ int main()
     intset.erase(it);//удаляем значение 889 по итератору
     cout<<"intset after intset.erase(it))"<<endl;
     printset(intset);
-    std::string strtomap = {"123"};//заполнение map из стринга
-    set<char> set(begin(strtomap), end(strtomap));
-    cout<<"from string to map, map now"<<endl;
-    printset(set);  
+    
     
 
     cout<<"Hello World";
