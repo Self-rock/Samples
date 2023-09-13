@@ -26,7 +26,11 @@ int main()
         {"London", 47},
 		{"Моршанск", 135}
     };
-	
+	map<std::string, int> cars;
+	cars ["Шевроле"]=5;//другой способ заполнения map
+	cars ["Нива"]=125;
+	cout << "map cars = " << endl;
+	outmap (cars);
 	//вывод значения map по ключу "Rome" (если индекса не существует, возвращает 0)
 	cout <<"years[Rome]" <<years["Rome"]<<endl;
 	//вывод значения map по ключу из стринга London
