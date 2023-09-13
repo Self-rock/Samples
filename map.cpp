@@ -29,8 +29,12 @@ int main()
 	map<std::string, int> cars;
 	cars ["Шевроле"]=5;//другой способ заполнения map
 	cars ["Нива"]=125;
-	cout << "map cars = " << endl;
+	cout << "map cars" << endl;
 	outmap (cars);
+	//другой способ вывода map, тут не работает, в песочнице все норм
+	//for (auto[key, value]:cars) cout <<key<<" = "<< value <<endl;
+	
+	
 	//вывод значения map по ключу "Rome" (если индекса не существует, возвращает 0)
 	cout <<"years[Rome]" <<years["Rome"]<<endl;
 	//вывод значения map по ключу из стринга London
