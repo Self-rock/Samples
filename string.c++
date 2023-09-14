@@ -105,10 +105,10 @@ int main()
     string::iterator it=strforiter.begin();//создаем итераторы для satring
     string::iterator it2=strforiter.end();
     
-    it2 = next(it, strforiter.find_first_of("MM"));
-    //cout << "it2= " << it2 << endl;
+    it2 = next(it, strforiter.find_first_of("MM"));//ищем ММ
+    //выводим значение, насколько it2 отстоит от начала массива
     cout << "it2= " <<distance(strforiter.begin(), it2) << endl;    
-    cout << "find in it2= " <<*it2 << endl;    
+    cout << "find in it2= " <<*it2 << endl;// выводим значение на которое указывает it2    
     cout << "find in it2+1= " <<*(it2++) << endl;
     cout << "find in it2+2= " <<*(it2+=2) << endl;
     
