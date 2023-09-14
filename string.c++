@@ -107,7 +107,8 @@ int main()
     
     it2 = next(it, strforiter.find_first_of("MM"));
     //cout << "it2= " << it2 << endl;
-    cout << "find in it2= " <<*it2 << endl;
+    cout << "it2= " <<distance(strforiter.begin(), it2) << endl;    
+    cout << "find in it2= " <<*it2 << endl;    
     cout << "find in it2+1= " <<*(it2++) << endl;
     cout << "find in it2+2= " <<*(it2+=2) << endl;
     
