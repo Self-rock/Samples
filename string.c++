@@ -101,6 +101,16 @@ int main()
     reverse(app.begin(), app.end()); // разворечиваем послед символов в массиве на противоположную
     cout << "app after reverse(app.begin(), app.end()) = " <<app << endl;
     
+    string strforiter {"abcqwertyMMzxc"};
+    string::iterator it=strforiter.begin();//создаем итераторы для satring
+    string::iterator it2=strforiter.end();
+    
+    it2 = next(it, strforiter.find_first_of("MM"));
+    //cout << "it2= " << it2 << endl;
+    cout << "find in it2= " <<*it2 << endl;
+    cout << "find in it2+1= " <<*(it2++) << endl;
+    cout << "find in it2+2= " <<*(it2+=2) << endl;
+    
     
     cin >>in;
     return 0;
