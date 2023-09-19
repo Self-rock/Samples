@@ -2,7 +2,7 @@
 #include <map>
 #include <string>
 using namespace std;
-
+/*
 //вывод map в консоль
 	void outmap (map<std::string, int> m){
 	//создает итератор it указывающий на начало map m
@@ -14,8 +14,13 @@ using namespace std;
     	++it;
   		}
 std::cout <<endl;
+} */
+template <typename T, typename U>
+void outmap (std::map<U, T> m){
+for (auto it1=m.begin(); it1!=m.end(); ++it1){
+        cout <<"Key "<<it1->first<<" Value "<< it1->second<<endl;
+    }
 }
-
 int main()
 {
     //map - словарь создание с заполнением - ключ стринг, значение int
@@ -106,7 +111,14 @@ int main()
 		cout << "map in for each i.second " <<i.second << endl;
 		if (i.second==1147) cout << "1147 ears, it Moscow " <<i.second << endl;
 	}
-
+	//тест универсального  вывода значения в конволь 
+	std::map<float, int> floatmap = {
+        {1.256, 1147},
+        {654.695, -753},
+        {1354.34, 47},
+		{46546.54, 135}
+    };
+	outmap (floatmap);
 
 	cout<<"Hello World";
     return 0;
