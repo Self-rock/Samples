@@ -1,6 +1,7 @@
 #include <iostream>
 #include <map>
 #include <string>
+#include <typeinfo>
 using namespace std;
 /*
 //вывод map в консоль
@@ -18,8 +19,9 @@ std::cout <<endl;
 template <typename T, typename U>
 void outmap (std::map<U, T> m){
 for (auto it1=m.begin(); it1!=m.end(); ++it1){
-        cout <<"Key "<<it1->first<<" Value "<< it1->second<<endl;
+        cout <<"Key "<<it1->first<<" Value "<< it1->second<<endl;		
     }
+	cout <<endl;
 }
 int main()
 {
