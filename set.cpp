@@ -55,7 +55,7 @@ int main()
     set<int>::iterator fin = intset.upper_bound(100); // first greater then snd
     for (auto i=start; i!=fin; i++){
     cout<<"i= "<<*i<<endl;
-}
+    }
 
     cout<<"Hello World";
 
