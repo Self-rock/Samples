@@ -50,7 +50,12 @@ int main()
     cout<<"intset after intset.erase(it))"<<endl;
     printset(intset);
     
-    
+    cout<<"iterator search"<<endl;   
+    set<int>::iterator start = intset.lower_bound(34); // first not less then fst
+    set<int>::iterator fin = intset.upper_bound(100); // first greater then snd
+    for (auto i=start; i!=fin; i++){
+    cout<<"i= "<<*i<<endl;
+}
 
     cout<<"Hello World";
 
