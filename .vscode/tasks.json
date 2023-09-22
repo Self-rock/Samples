@@ -6,8 +6,8 @@
             "command": "H:\\MinGW\\bin\\g++.exe",
             "args": [
                 "-fdiagnostics-color=always",
-                "-g",
-                "${file}",
+                "-g",                
+				"${file}",				
                 "-o",
                 "${fileDirname}\\${fileBasenameNoExtension}.exe"
             ],
