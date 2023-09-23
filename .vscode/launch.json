@@ -16,7 +16,7 @@
             "name": "(gdb) Запустить",
             "type": "cppdbg",
             "request": "launch",
-            "program": "${workspaceFolder}/string.exe",
+            "program": "${workspaceFolder}/vector.exe",
             "args": [],
             "stopAtEntry": false,
             "cwd": "${fileDirname}",
