@@ -92,7 +92,6 @@ int main(int argc, const char** argv) {
     //std::sort(array.begin(), array.end(), [](std::string const& s1, std::string const& s2) { return s1.size() < s2.size(); });
     //удаление неуникальных? не проверено
     //values.erase(std::unique(values.begin(),values.end()), values.end());
-    int a;
-        cin>>a;
+    
     return 0;
 }
