@@ -28,9 +28,7 @@ GDB = H:\mingw64\bin\gdb.exe
 
 #make -n all показывает выполняемые по make all команды, без их выполнения
 
-help: 
-	@echo "Help information about targets"
-	@echo "String 2"
+
 EXECUTABLES := $(patsubst %.cpp,%,$(wildcard *.cpp))
 
 #Цель собрать все
