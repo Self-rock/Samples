@@ -5,7 +5,7 @@
             "name": "(Windows) Запустить",
             "type": "cppvsdbg",
             "request": "launch",
-            "program": "${workspaceFolder}/string.exe",
+            "program": "${workspaceFolder}/vector.exe",
             "args": [],
             "stopAtEntry": false,
             "cwd": "${fileDirname}",

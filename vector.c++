@@ -93,5 +93,9 @@ int main(int argc, const char** argv) {
     //удаление неуникальных? не проверено
     //values.erase(std::unique(values.begin(),values.end()), values.end());
     
+    cout << "ivec  = " << endl; 
+    VecToCout(ivec);
+    cout << "Count 2 into ivec = "<< count(ivec.begin(), ivec.end(), 2) << endl;
+    cout << "Count 8 into ivec = "<< count(ivec.begin(), ivec.end(), 8) << endl;
     return 0;
 }
