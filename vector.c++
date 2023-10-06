@@ -97,5 +97,11 @@ int main(int argc, const char** argv) {
     VecToCout(ivec);
     cout << "Count 2 into ivec = "<< count(ivec.begin(), ivec.end(), 2) << endl;
     cout << "Count 8 into ivec = "<< count(ivec.begin(), ivec.end(), 8) << endl;
+    //подчтет нечетных с отдельной лямбда функцией
+    auto is_odd = [](auto e){return e%2==1;};
+    cout << "Count_if odd into ivec = "<< count_if (ivec.begin(), ivec.end(), is_odd) << endl;
+    //подчтет восьмерок со встроенной лямбда функцией
+    cout << "Count 8 into ivec = "<< count_if(ivec.begin(), ivec.end(), [](auto e){return e==8;}) << endl;
+    
     return 0;
 }
