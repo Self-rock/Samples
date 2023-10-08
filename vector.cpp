@@ -1,6 +1,6 @@
 #include <iostream>
 #include <vector>
-#include <algorithm> //необходим для сортировки вектора
+#include <algorithm> //╨╜╨╡╨╛╨▒╤Е╨╛╨┤╨╕╨╝ ╨┤╨╗╤П ╤Б╨╛╤А╤В╨╕╤А╨╛╨▓╨║╨╕ ╨▓╨╡╨║╤В╨╛╤А╨░
 using namespace std;
 
 template <typename T>
@@ -12,95 +12,95 @@ for (auto i : v) {
 }
 
 int main(int argc, const char** argv) {
-    vector <int> ivec={1,2,3,4,5,6,7,8,9};//создаем вектор  целых чисел
-    vector <string> svec={"Vova","V","o","v","a"};//создаем вектор строк
-    vector <int> fiveInt(5);//создаем вектор на 5 int
-    vector <string> fiveString;//создаем пустой вектор стринг
-    fiveString.reserve(5);//растягиваем его на 5 элементов
-    vector <vector <int>> vecvec;//создаем вектор векторов
-    vecvec.resize(10);// увеличиваем размер вектора векторов до 10
+    vector <int> ivec={1,2,3,4,5,6,7,8,9};//╤Б╨╛╨╖╨┤╨░╨╡╨╝ ╨▓╨╡╨║╤В╨╛╤А  ╤Ж╨╡╨╗╤Л╤Е ╤З╨╕╤Б╨╡╨╗
+    vector <string> svec={"Vova","V","o","v","a"};//╤Б╨╛╨╖╨┤╨░╨╡╨╝ ╨▓╨╡╨║╤В╨╛╤А ╤Б╤В╤А╨╛╨║
+    vector <int> fiveInt(5);//╤Б╨╛╨╖╨┤╨░╨╡╨╝ ╨▓╨╡╨║╤В╨╛╤А ╨╜╨░ 5 int
+    vector <string> fiveString;//╤Б╨╛╨╖╨┤╨░╨╡╨╝ ╨┐╤Г╤Б╤В╨╛╨╣ ╨▓╨╡╨║╤В╨╛╤А ╤Б╤В╤А╨╕╨╜╨│
+    fiveString.reserve(5);//╤А╨░╤Б╤В╤П╨│╨╕╨▓╨░╨╡╨╝ ╨╡╨│╨╛ ╨╜╨░ 5 ╤Н╨╗╨╡╨╝╨╡╨╜╤В╨╛╨▓
+    vector <vector <int>> vecvec;//╤Б╨╛╨╖╨┤╨░╨╡╨╝ ╨▓╨╡╨║╤В╨╛╤А ╨▓╨╡╨║╤В╨╛╤А╨╛╨▓
+    vecvec.resize(10);// ╤Г╨▓╨╡╨╗╨╕╤З╨╕╨▓╨░╨╡╨╝ ╤А╨░╨╖╨╝╨╡╤А ╨▓╨╡╨║╤В╨╛╤А╨░ ╨▓╨╡╨║╤В╨╛╤А╨╛╨▓ ╨┤╨╛ 10
     vecvec =   {{1, 4, 7},
                 {2, 5, 8},
-                {3, 6, 9}};//заполняем вектор векторов
+                {3, 6, 9}};//╨╖╨░╨┐╨╛╨╗╨╜╤П╨╡╨╝ ╨▓╨╡╨║╤В╨╛╤А ╨▓╨╡╨║╤В╨╛╤А╨╛╨▓
     cout << "ivec= "<< ivec[0] << endl;
     cout << "svec= "<< svec[0] << endl;
-    ivec.at(0)=8;//изменяем значение первого элемента целочисленного вектора
-    svec.at(0)="Mova";//изменяем значение первого элемента строкового вектора
-    //выводим на экран содержимое первых элементов векторов двумя способами
+    ivec.at(0)=8;//╨╕╨╖╨╝╨╡╨╜╤П╨╡╨╝ ╨╖╨╜╨░╤З╨╡╨╜╨╕╨╡ ╨┐╨╡╤А╨▓╨╛╨│╨╛ ╤Н╨╗╨╡╨╝╨╡╨╜╤В╨░ ╤Ж╨╡╨╗╨╛╤З╨╕╤Б╨╗╨╡╨╜╨╜╨╛╨│╨╛ ╨▓╨╡╨║╤В╨╛╤А╨░
+    svec.at(0)="Mova";//╨╕╨╖╨╝╨╡╨╜╤П╨╡╨╝ ╨╖╨╜╨░╤З╨╡╨╜╨╕╨╡ ╨┐╨╡╤А╨▓╨╛╨│╨╛ ╤Н╨╗╨╡╨╝╨╡╨╜╤В╨░ ╤Б╤В╤А╨╛╨║╨╛╨▓╨╛╨│╨╛ ╨▓╨╡╨║╤В╨╛╤А╨░
+    //╨▓╤Л╨▓╨╛╨┤╨╕╨╝ ╨╜╨░ ╤Н╨║╤А╨░╨╜ ╤Б╨╛╨┤╨╡╤А╨╢╨╕╨╝╨╛╨╡ ╨┐╨╡╤А╨▓╤Л╤Е ╤Н╨╗╨╡╨╝╨╡╨╜╤В╨╛╨▓ ╨▓╨╡╨║╤В╨╛╤А╨╛╨▓ ╨┤╨▓╤Г╨╝╤П ╤Б╨┐╨╛╤Б╨╛╨▒╨░╨╝╨╕
     cout << "ivec[0]= "<< ivec[0] << endl;
     cout << "ivec.at(0)= "<< ivec.at(0) << endl;
     cout << "svec[0]= "<< svec[0] << endl;
     cout << "svec.at(0)= "<< svec.at(0) << endl;
-    if (ivec == fiveInt) cout << "ivec and  fiveInt they equal!"<< endl;// сравнили вектора
+    if (ivec == fiveInt) cout << "ivec and  fiveInt they equal!"<< endl;// ╤Б╤А╨░╨▓╨╜╨╕╨╗╨╕ ╨▓╨╡╨║╤В╨╛╤А╨░
     else {cout << "ivec and  fiveInt they not equal"<< endl; }
-    cout << "svec.size() = "<< svec.size() << endl;//показываем размер вектора svec
+    cout << "svec.size() = "<< svec.size() << endl;//╨┐╨╛╨║╨░╨╖╤Л╨▓╨░╨╡╨╝ ╤А╨░╨╖╨╝╨╡╤А ╨▓╨╡╨║╤В╨╛╤А╨░ svec
     svec.push_back("Nova");
-    cout << "svec.size() after svec.push_back(Nova) = "<< svec.size() << endl;//показываем новый размер вектора svec
+    cout << "svec.size() after svec.push_back(Nova) = "<< svec.size() << endl;//╨┐╨╛╨║╨░╨╖╤Л╨▓╨░╨╡╨╝ ╨╜╨╛╨▓╤Л╨╣ ╤А╨░╨╖╨╝╨╡╤А ╨▓╨╡╨║╤В╨╛╤А╨░ svec
     cout << "svec.at(5)= "<< svec.at(5) << endl;
     svec.pop_back();
-    cout << "svec.size() after svec.pop_back() = "<< svec.size() << endl;//показываем новый размер вектора svec
-    if (fiveInt.empty()) cout << "fiveInt empty"<< endl;// проверяем не имеет ли вектот нулевой размер 
+    cout << "svec.size() after svec.pop_back() = "<< svec.size() << endl;//╨┐╨╛╨║╨░╨╖╤Л╨▓╨░╨╡╨╝ ╨╜╨╛╨▓╤Л╨╣ ╤А╨░╨╖╨╝╨╡╤А ╨▓╨╡╨║╤В╨╛╤А╨░ svec
+    if (fiveInt.empty()) cout << "fiveInt empty"<< endl;// ╨┐╤А╨╛╨▓╨╡╤А╤П╨╡╨╝ ╨╜╨╡ ╨╕╨╝╨╡╨╡╤В ╨╗╨╕ ╨▓╨╡╨║╤В╨╛╤В ╨╜╤Г╨╗╨╡╨▓╨╛╨╣ ╤А╨░╨╖╨╝╨╡╤А 
     cout << "fiveInt not empty"<< endl;
     cout << "svec.size() = "<< svec.size() << endl;
-    svec.insert(svec.begin(), "Nova"); //вставляем элемент в начало вектора
-    svec.insert(svec.end(), "Korova");//вставляем элемент в конец вектора
+    svec.insert(svec.begin(), "Nova"); //╨▓╤Б╤В╨░╨▓╨╗╤П╨╡╨╝ ╤Н╨╗╨╡╨╝╨╡╨╜╤В ╨▓ ╨╜╨░╤З╨░╨╗╨╛ ╨▓╨╡╨║╤В╨╛╤А╨░
+    svec.insert(svec.end(), "Korova");//╨▓╤Б╤В╨░╨▓╨╗╤П╨╡╨╝ ╤Н╨╗╨╡╨╝╨╡╨╜╤В ╨▓ ╨║╨╛╨╜╨╡╤Ж ╨▓╨╡╨║╤В╨╛╤А╨░
     cout << "svec.size() after two Insert() = "<< svec.size() << endl;
-    cout << "svec.front() = "<< svec.front() << endl; //выводим первый элемент через svec.front()
-    cout << "svec.back() = "<< svec.back() << endl;//выводим последний элемент через svec.back()
-    svec.erase (svec.end());//удаляем последний элемент вектора svec
+    cout << "svec.front() = "<< svec.front() << endl; //╨▓╤Л╨▓╨╛╨┤╨╕╨╝ ╨┐╨╡╤А╨▓╤Л╨╣ ╤Н╨╗╨╡╨╝╨╡╨╜╤В ╤З╨╡╤А╨╡╨╖ svec.front()
+    cout << "svec.back() = "<< svec.back() << endl;//╨▓╤Л╨▓╨╛╨┤╨╕╨╝ ╨┐╨╛╤Б╨╗╨╡╨┤╨╜╨╕╨╣ ╤Н╨╗╨╡╨╝╨╡╨╜╤В ╤З╨╡╤А╨╡╨╖ svec.back()
+    svec.erase (svec.end());//╤Г╨┤╨░╨╗╤П╨╡╨╝ ╨┐╨╛╤Б╨╗╨╡╨┤╨╜╨╕╨╣ ╤Н╨╗╨╡╨╝╨╡╨╜╤В ╨▓╨╡╨║╤В╨╛╤А╨░ svec
     cout << "svec.size() after svec.erase (svec.end()) = "<< svec.size() << endl;
     cout << "svec.back() = "<< svec.back() << endl;
     cout << "svec.size()  = "<< svec.size() << endl;
-    cout <<"svec.capacity()= " <<svec.capacity()<< endl;//capacity - вместимость коллекции 
-    //определяет реальный размер - то есть размер буфера коллекции, а не то, сколько в нем хранится элементов
+    cout <<"svec.capacity()= " <<svec.capacity()<< endl;//capacity - ╨▓╨╝╨╡╤Б╤В╨╕╨╝╨╛╤Б╤В╤М ╨║╨╛╨╗╨╗╨╡╨║╤Ж╨╕╨╕ 
+    //╨╛╨┐╤А╨╡╨┤╨╡╨╗╤П╨╡╤В ╤А╨╡╨░╨╗╤М╨╜╤Л╨╣ ╤А╨░╨╖╨╝╨╡╤А - ╤В╨╛ ╨╡╤Б╤В╤М ╤А╨░╨╖╨╝╨╡╤А ╨▒╤Г╤Д╨╡╤А╨░ ╨║╨╛╨╗╨╗╨╡╨║╤Ж╨╕╨╕, ╨░ ╨╜╨╡ ╤В╨╛, ╤Б╨║╨╛╨╗╤М╨║╨╛ ╨▓ ╨╜╨╡╨╝ ╤Е╤А╨░╨╜╨╕╤В╤Б╤П ╤Н╨╗╨╡╨╝╨╡╨╜╤В╨╛╨▓
     cout << "ivec= "<< ivec[0] << endl;
-    //выводим вектор 
-    cout << "ivec полностью = " << endl; 
+    //╨▓╤Л╨▓╨╛╨┤╨╕╨╝ ╨▓╨╡╨║╤В╨╛╤А 
+    cout << "ivec ╨┐╨╛╨╗╨╜╨╛╤Б╤В╤М╤О = " << endl; 
     VecToCout(ivec);
-    // сортируем вектор (для сортировки нужен #include <algorithm>)
+    // ╤Б╨╛╤А╤В╨╕╤А╤Г╨╡╨╝ ╨▓╨╡╨║╤В╨╛╤А (╨┤╨╗╤П ╤Б╨╛╤А╤В╨╕╤А╨╛╨▓╨║╨╕ ╨╜╤Г╨╢╨╡╨╜ #include <algorithm>)
     sort(ivec.begin(), ivec.end());
-    //сортировка в обратном порядке (проверено не здесь)
+    //╤Б╨╛╤А╤В╨╕╤А╨╛╨▓╨║╨░ ╨▓ ╨╛╨▒╤А╨░╤В╨╜╨╛╨╝ ╨┐╨╛╤А╤П╨┤╨║╨╡ (╨┐╤А╨╛╨▓╨╡╤А╨╡╨╜╨╛ ╨╜╨╡ ╨╖╨┤╨╡╤Б╤М)
     //sort(ivec.rbegin(), ivec.rend());
-    //is_sorted(begin(ivec), end(ivec));//если ivec отсортирован по возрастанию, вернет true
+    //is_sorted(begin(ivec), end(ivec));//╨╡╤Б╨╗╨╕ ivec ╨╛╤В╤Б╨╛╤А╤В╨╕╤А╨╛╨▓╨░╨╜ ╨┐╨╛ ╨▓╨╛╨╖╤А╨░╤Б╤В╨░╨╜╨╕╤О, ╨▓╨╡╤А╨╜╨╡╤В true
     //is_sorted(array.begin(), array.end());
-    //is_sorted(std::rbegin(ivec), std::rend(ivec))//если ivec отсортирован по убыванию, вернет true
+    //is_sorted(std::rbegin(ivec), std::rend(ivec))//╨╡╤Б╨╗╨╕ ivec ╨╛╤В╤Б╨╛╤А╤В╨╕╤А╨╛╨▓╨░╨╜ ╨┐╨╛ ╤Г╨▒╤Л╨▓╨░╨╜╨╕╤О, ╨▓╨╡╤А╨╜╨╡╤В true
     //is_sorted(array.rbegin(),array.rend())
-    //reverse(ivec.begin(), ivec.end());//разворачивает массив наоборот (не проверено)
-    //выводим содержимое вектора после сортировки
-    cout << "ivec после сортировки = " << endl; 
+    //reverse(ivec.begin(), ivec.end());//╤А╨░╨╖╨▓╨╛╤А╨░╤З╨╕╨▓╨░╨╡╤В ╨╝╨░╤Б╤Б╨╕╨▓ ╨╜╨░╨╛╨▒╨╛╤А╨╛╤В (╨╜╨╡ ╨┐╤А╨╛╨▓╨╡╤А╨╡╨╜╨╛)
+    //╨▓╤Л╨▓╨╛╨┤╨╕╨╝ ╤Б╨╛╨┤╨╡╤А╨╢╨╕╨╝╨╛╨╡ ╨▓╨╡╨║╤В╨╛╤А╨░ ╨┐╨╛╤Б╨╗╨╡ ╤Б╨╛╤А╤В╨╕╤А╨╛╨▓╨║╨╕
+    cout << "ivec ╨┐╨╛╤Б╨╗╨╡ ╤Б╨╛╤А╤В╨╕╤А╨╛╨▓╨║╨╕ = " << endl; 
     VecToCout(ivec);
-    vector<int> v={1,2,3,4,5,6,7,8,9,9,9};//для след строки нужен #include <algorithm>
-    for_each(v.begin(), v.end(), [](int& a){a = a*a;});//умножаем каждый элемент на самого себя
+    vector<int> v={1,2,3,4,5,6,7,8,9,9,9};//╨┤╨╗╤П ╤Б╨╗╨╡╨┤ ╤Б╤В╤А╨╛╨║╨╕ ╨╜╤Г╨╢╨╡╨╜ #include <algorithm>
+    for_each(v.begin(), v.end(), [](int& a){a = a*a;});//╤Г╨╝╨╜╨╛╨╢╨░╨╡╨╝ ╨║╨░╨╢╨┤╤Л╨╣ ╤Н╨╗╨╡╨╝╨╡╨╜╤В ╨╜╨░ ╤Б╨░╨╝╨╛╨│╨╛ ╤Б╨╡╨▒╤П
     cout << "vector v after for_each(v.begin(), v.end(), [](int& a){a = a*a;})= "; 
     VecToCout(v);    
-    cout << "вывод вектора через for_each(v.begin(), v.end(), [](int a){cout << a << ' ';}) " << endl;
-    for_each(v.begin(), v.end(), [](int a){cout << a << ' ';});//вывод вектора через for_each
+    cout << "╨▓╤Л╨▓╨╛╨┤ ╨▓╨╡╨║╤В╨╛╤А╨░ ╤З╨╡╤А╨╡╨╖ for_each(v.begin(), v.end(), [](int a){cout << a << ' ';}) " << endl;
+    for_each(v.begin(), v.end(), [](int a){cout << a << ' ';});//╨▓╤Л╨▓╨╛╨┤ ╨▓╨╡╨║╤В╨╛╤А╨░ ╤З╨╡╤А╨╡╨╖ for_each
     vector <int> tmp;
     cout << endl;
-    unique_copy (v.begin(), v.end(), std :: back_inserter(tmp));//поиск уникальных элементов 
-    //и вставка их в конец вектора или списка    
-    cout << "вектор tmp после  unique_copy (v.begin(), v.end(), std :: back_inserter(tmp)); " << endl;
+    unique_copy (v.begin(), v.end(), std :: back_inserter(tmp));//╨┐╨╛╨╕╤Б╨║ ╤Г╨╜╨╕╨║╨░╨╗╤М╨╜╤Л╤Е ╤Н╨╗╨╡╨╝╨╡╨╜╤В╨╛╨▓ 
+    //╨╕ ╨▓╤Б╤В╨░╨▓╨║╨░ ╨╕╤Е ╨▓ ╨║╨╛╨╜╨╡╤Ж ╨▓╨╡╨║╤В╨╛╤А╨░ ╨╕╨╗╨╕ ╤Б╨┐╨╕╤Б╨║╨░    
+    cout << "╨▓╨╡╨║╤В╨╛╤А tmp ╨┐╨╛╤Б╨╗╨╡  unique_copy (v.begin(), v.end(), std :: back_inserter(tmp)); " << endl;
     VecToCout(tmp);
     tmp.assign(18,9);
-    cout << "вектор tmp после  tmp.assign(18,9) " << endl;
+    cout << "╨▓╨╡╨║╤В╨╛╤А tmp ╨┐╨╛╤Б╨╗╨╡  tmp.assign(18,9) " << endl;
     VecToCout(tmp);
     tmp.clear();
-    cout << "вектор tmp после  tmp.clear() " << endl;
+    cout << "╨▓╨╡╨║╤В╨╛╤А tmp ╨┐╨╛╤Б╨╗╨╡  tmp.clear() " << endl;
     VecToCout(tmp);
-    cout << "tmp.size() после tmp.clear() = "<< tmp.size() << endl;
-    //сортировка векторов стрингов по размеру стрингов (не проверено)
+    cout << "tmp.size() ╨┐╨╛╤Б╨╗╨╡ tmp.clear() = "<< tmp.size() << endl;
+    //╤Б╨╛╤А╤В╨╕╤А╨╛╨▓╨║╨░ ╨▓╨╡╨║╤В╨╛╤А╨╛╨▓ ╤Б╤В╤А╨╕╨╜╨│╨╛╨▓ ╨┐╨╛ ╤А╨░╨╖╨╝╨╡╤А╤Г ╤Б╤В╤А╨╕╨╜╨│╨╛╨▓ (╨╜╨╡ ╨┐╤А╨╛╨▓╨╡╤А╨╡╨╜╨╛)
     //std::sort(array.begin(), array.end(), [](std::string const& s1, std::string const& s2) { return s1.size() < s2.size(); });
-    //удаление неуникальных? не проверено
+    //╤Г╨┤╨░╨╗╨╡╨╜╨╕╨╡ ╨╜╨╡╤Г╨╜╨╕╨║╨░╨╗╤М╨╜╤Л╤Е? ╨╜╨╡ ╨┐╤А╨╛╨▓╨╡╤А╨╡╨╜╨╛
     //values.erase(std::unique(values.begin(),values.end()), values.end());
     
     cout << "ivec  = " << endl; 
     VecToCout(ivec);
     cout << "Count 2 into ivec = "<< count(ivec.begin(), ivec.end(), 2) << endl;
     cout << "Count 8 into ivec = "<< count(ivec.begin(), ivec.end(), 8) << endl;
-    //подчтет нечетных с отдельной лямбда функцией
+    //╨┐╨╛╨┤╤З╤В╨╡╤В ╨╜╨╡╤З╨╡╤В╨╜╤Л╤Е ╤Б ╨╛╤В╨┤╨╡╨╗╤М╨╜╨╛╨╣ ╨╗╤П╨╝╨▒╨┤╨░ ╤Д╤Г╨╜╨║╤Ж╨╕╨╡╨╣
     auto is_odd = [](auto e){return e%2==1;};
     cout << "Count_if odd into ivec = "<< count_if (ivec.begin(), ivec.end(), is_odd) << endl;
-    //подчтет восьмерок со встроенной лямбда функцией
+    //╨┐╨╛╨┤╤З╤В╨╡╤В ╨▓╨╛╤Б╤М╨╝╨╡╤А╨╛╨║ ╤Б╨╛ ╨▓╤Б╤В╤А╨╛╨╡╨╜╨╜╨╛╨╣ ╨╗╤П╨╝╨▒╨┤╨░ ╤Д╤Г╨╜╨║╤Ж╨╕╨╡╨╣
     cout << "Count 8 into ivec = "<< count_if(ivec.begin(), ivec.end(), [](auto e){return e==8;}) << endl;
     
     return 0;
