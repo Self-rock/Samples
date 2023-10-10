@@ -1,6 +1,6 @@
 #include <iostream>
 #include <deque>
-#include <vector>
+
 using namespace std;
 
 template <typename T>
