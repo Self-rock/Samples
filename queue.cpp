@@ -7,6 +7,7 @@ using namespace std;
 int main(int argc, char const *argv[])
 {
     queue<int> q;
+    deque<int> q2;
     q.push(1);
     q.push(2);
     q.emplace(3);
@@ -17,6 +18,9 @@ int main(int argc, char const *argv[])
     cout <<"q.front() "<<q.front()<<endl;
     q.pop();
     cout <<"q.front() after q.pop() "<<q.front()<<endl;
+
+    cout << "size queue "<< q.size()<<endl;
     
+   
     return 0;
 }
