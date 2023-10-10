@@ -20,6 +20,7 @@ int main(int argc, char const *argv[])
     cout <<"q.front() after q.pop() "<<q.front()<<endl;
 
     cout << "size queue "<< q.size()<<endl;
+   
     
    
     return 0;
