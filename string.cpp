@@ -81,6 +81,8 @@ int main()
     //проверяем отсортирован ли массив либо его участок
     if (is_sorted(unsort.begin(), unsort.end())) cout <<"unsort to sorted"<<endl;
     cout << "stoi(125) " <<stoi("125") << endl;// строку в целое число
+    //stoll(str); стринг в  long long int
+    //stoull(str); стринг в unsigned long long int
     cout << "to_string(85364) " <<to_string(85364) << endl; // целое число в строку
     std::size_t found = app.find("-*-");//ищем строку -*- и сохраняем ее индекс в found 
     cout << "-*- in app find at " <<found << endl;
