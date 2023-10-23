@@ -80,9 +80,14 @@ int main()
     cout << "unsort после сортировки " <<unsort << endl; 
     //проверяем отсортирован ли массив либо его участок
     if (is_sorted(unsort.begin(), unsort.end())) cout <<"unsort to sorted"<<endl;
-    cout << "stoi(125) " <<stoi("125") << endl;// строку в целое число
+    cout << "stoi(125) " <<stoi("125") << endl;// строку в целое число    
+    //stol(str); стринг в long int
+    //stoul(str); стринг в unsigned long int
     //stoll(str); стринг в  long long int
     //stoull(str); стринг в unsigned long long int
+    //stof(s) стринг во флоат
+    //stod(str); стринг в double int
+    //stold(str); стринг в long double int
     cout << "to_string(85364) " <<to_string(85364) << endl; // целое число в строку
     std::size_t found = app.find("-*-");//ищем строку -*- и сохраняем ее индекс в found 
     cout << "-*- in app find at " <<found << endl;
@@ -113,8 +118,11 @@ int main()
     cout << "find in it2= " <<*it2 << endl;// выводим значение на которое указывает it2    
     cout << "find in it2+1= " <<*(it2++) << endl;
     cout << "find in it2+2= " <<*(it2+=2) << endl;
-    
-    
+    //stof(s) стринг во флоат
+    string Sstrtofloat {"1.236"};
+    float fl = stof(Sstrtofloat);
+    cout << "float fl = " <<fl << endl;
+
     cin >>in;
     return 0;
 }
