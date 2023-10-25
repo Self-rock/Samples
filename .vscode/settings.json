@@ -45,7 +45,17 @@
         "map": "cpp",
         "list": "cpp",
         "set": "cpp",
-        "*.ipp": "cpp"
+        "*.ipp": "cpp",
+        "unordered_set": "cpp",
+        "forward_list": "cpp",
+        "rope": "cpp",
+        "slist": "cpp",
+        "chrono": "cpp",
+        "format": "cpp",
+        "ranges": "cpp",
+        "span": "cpp",
+        "regex": "cpp",
+        "valarray": "cpp"
     },
     "projectManager.git.baseFolders": [
         "C:\\Users\\Selfrock\\Desktop\\C++",
