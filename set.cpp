@@ -2,6 +2,8 @@
 #include <iostream>
 using namespace std; 
 
+//упорядоченый (самосортирующийся) контейнер, максимум 201 элемент
+
 template <typename T>
 void printset(T& a) {
 for (auto i:a) cout <<i<<endl;
@@ -32,6 +34,7 @@ int main()
     printset(intset);
     intset.insert(5525);//добавляем элемент
     cout<<"intset after intset.insert(5525)"<<endl;
+    //se_set.insert(s1.begin(),s1.end());//вставка диапазона символов из строки
     printset(intset);    
     intset.erase(982);//удаляем элемент по значению
     cout<<"intset after intset.erase(982)"<<endl;
