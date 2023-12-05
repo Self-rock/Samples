@@ -12,6 +12,12 @@
 //#define _BV(bit) (1 << bit) //Возвращает 2 в степени bit
 //#define BIT_IS_CLEAR(val, bit) (~val) & _BV(bit) //проверка значения бита (в нуле ли он) требует макроса _BV (не работает)
 
+/*
+value |= 1 << N;    // установить бит N
+value &= ~(1 << N); // сбросить бит N
+value ^= (1 << N);  // переключить бит N
+*/
+
 using namespace std;
 
 int main()
