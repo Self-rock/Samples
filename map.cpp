@@ -122,6 +122,8 @@ int main()
     };
 	outmap (floatmap);
 
+	//if(!mapkey[ii]) //проверка на отсутствие значения в мапе по индексу
+
 	cout<<"Hello World";
     return 0;
 }

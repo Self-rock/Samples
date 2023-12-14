@@ -88,6 +88,7 @@ int main()
     //stof(s) стринг во флоат
     //stod(str); стринг в double int
     //stold(str); стринг в long double int
+    //vectorstring.push_back({char, char});//добавление в вектор стрингов двух чар
     cout << "to_string(85364) " <<to_string(85364) << endl; // целое число в строку
     std::size_t found = app.find("-*-");//ищем строку -*- и сохраняем ее индекс в found 
     cout << "-*- in app find at " <<found << endl;
