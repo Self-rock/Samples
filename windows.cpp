@@ -7,6 +7,6 @@ int WINAPI WinMain(HINSTANCE hInstance, // дескриптор экземпля
                    int nCmdShow) // режим отображения окна
 {
         // Функция вывода окна с кнопкой "ОК" на экран (о параметрах позже)
-        MessageBox(NULL, L"Hello, world!!!", L"Windows procedure", MB_OK);
+        MessageBox(NULL, "Hello, world!!!", "Windows procedure", MB_OK);//L перед ковычками иногда требует
         return 0; // возвращаем значение функции
 }

@@ -3,7 +3,7 @@
         {
             "type": "cppbuild",
             "label": "C/C++: g++.exe сборка активного файла",
-            "command": "H:\\MinGW\\bin\\g++.exe",
+            "command": "H:\\Qt\\Tools\\mingw1120_64\\bing++.exe",
             "args": [
                 "-fdiagnostics-color=always",
                 "-g",                
