@@ -68,15 +68,30 @@ for_each();
     stable_sort();
     set_union();
     set_intersection();
-    set_difference();
-    set_symmetric_difference();
+    
     min_element();
     max_element();
     
     */
 
+    string str1dif{"1,2,3,4,5,6,8"};//для диференс строки должны быть сортированы
+    string str2dif{"3,5,9"};
+    string strdifresult;
+    //что сравниваем, с чем, и куда потом вставляем результат
+    set_difference(str1dif.begin(),str1dif.end(), 
+                    str2dif.begin(),str2dif.end(),
+                    back_inserter(strdifresult));
+    cout << "set_difference strdifresult "<<strdifresult<<endl;
+    strdifresult ="";
+    //что сравниваем, с чем, и куда потом вставляем результат (слепливает вмести два последних значения)
+    set_symmetric_difference(str1dif.begin(),str1dif.end(), 
+                        str2dif.begin(),str2dif.end(),
+                        back_inserter(strdifresult));
+    cout << "set_symmetric_difference strdifaresult "<<strdifresult<<endl;
+    
     string str {"Hi everiver"};
     cout<<str<<endl;
+    
     //sort(str.begin(), str.end());//не универсальный вариант
     sort(begin(str), end(str));//универсальный вариант сортировки
     cout<<str<<endl;
