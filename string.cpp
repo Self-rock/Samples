@@ -57,7 +57,7 @@ int main()
     app.replace (2, 3, ins, 0, 3);//// заменяем 3 символа строки app, начиная с 2, на 3 символа строки ins, начиная с 0 элемента
     cout<<"app = "<<app<<endl;
     cout<<"ins into app placed at "<<app.find(ins, 0)<<" item"<<endl;// ищем вхождение строки ins  в строку app слева направо, 
-    //показываем номер элемента где в строке app находится строка ins 
+    //показываем номер элемента где в строке app находится строка ins (app.find(ins) должно тоже работать и быстрее)
     cout<<"app = "<<app<<endl;
     cout<<"ins = "<<ins<<endl;
     cout<<"swaped app and ins"<<endl;
