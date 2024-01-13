@@ -70,7 +70,7 @@ for_each();
     set_intersection();
     
     min_element();
-    max_element();
+    max_element();//возвращает итератор
     
     */
 

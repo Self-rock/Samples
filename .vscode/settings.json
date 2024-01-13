@@ -90,7 +90,8 @@
         "syncstream": "cpp",
         "thread": "cpp",
         "typeindex": "cpp",
-        "variant": "cpp"
+        "variant": "cpp",
+        "stacktrace": "cpp"
     },
     "projectManager.git.baseFolders": [
         "C:\\Users\\Selfrock\\Desktop\\C++",
