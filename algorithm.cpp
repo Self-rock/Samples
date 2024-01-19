@@ -5,6 +5,8 @@ using namespace std;
 
 int main()
 {
+    string test{"123456891011"};
+    
     /*
     find_end();
     all_of();
@@ -67,12 +69,13 @@ for_each();
     merge();
     stable_sort();
     set_union();
-    set_intersection();
-    
-    min_element();
-    max_element();//возвращает итератор
-    
+    set_intersection(); 
     */
+    
+    //возвращает итератор на минимальный элемент контейнера
+    cout << "min_element test "<<*min_element(test.begin(), test.end())<<endl;
+    //возвращает итератор на максимальный элемент контейнера
+    cout << "max_element test "<<*max_element(test.begin(), test.end())<<endl;
 
     string str1dif{"1,2,3,4,5,6,8"};//для диференс строки должны быть сортированы
     string str2dif{"3,5,9"};
