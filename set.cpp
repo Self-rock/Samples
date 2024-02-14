@@ -60,6 +60,7 @@ int main()
     cout<<"i= "<<*i<<endl;
     }
 
+//myset.contains(8) //проверка, содержит ли set аргумент
 
     cout<<"Hello World";
 
