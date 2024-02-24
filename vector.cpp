@@ -12,6 +12,9 @@ for (auto i : v) {
 }
 
 int main(int argc, const char** argv) {
+    //vector<vector<int>> result;
+    //result.push_back({});//добавление вектора в вектор векторов
+    
     vector <int> ivec={1,2,3,4,5,6,7,8,9};//создаем вектор  целых чисел
     vector <string> svec={"Vova","V","o","v","a"};//создаем вектор строк
     vector <int> fiveInt(5);//создаем вектор на 5 int
