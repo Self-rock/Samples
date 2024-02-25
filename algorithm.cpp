@@ -99,5 +99,18 @@ for_each();
     sort(begin(str), end(str));//универсальный вариант сортировки
     cout<<str<<endl;
 
+    //сорт со своим оператором сравнения 
+    /* создаем свой оператор сравнения
+    static bool comparator(int &a  , int & b){
+      return a%2 < b%2 ;
+    }
+    //используем созданый оператор сравнения ждя ссортировки
+    vector<int> sortArrayByParity(vector<int>& nums) {
+        int n = nums.size(); 
+        if(n==1) return nums;
+        sort(nums.begin() , nums.end() , comparator);
+        return nums;
+    }*/
+
     return 0;
 }
