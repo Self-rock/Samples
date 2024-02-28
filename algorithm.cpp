@@ -112,5 +112,8 @@ for_each();
         return nums;
     }*/
 
+    //или так с лямбдой
+    //sort(nums.begin() , nums.end() , [](int &a  , int & b){return a%2 < b%2 ;});
+
     return 0;
 }
