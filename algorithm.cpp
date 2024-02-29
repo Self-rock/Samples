@@ -115,5 +115,7 @@ for_each();
     //или так с лямбдой
     //sort(nums.begin() , nums.end() , [](int &a  , int & b){return a%2 < b%2 ;});
 
+    //сортировка вектора векторов по второму (индекс 1) элементу внутреннего вектора
+    //sort(vecvec.begin(), vecvec.end(), [](vector<int> a, vector<int> b){return a[1]<b[1];});
     return 0;
 }
