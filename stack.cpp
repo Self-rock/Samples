@@ -35,5 +35,8 @@ int main(int argc, char const *argv[])
     if (st.empty()) cout <<"st empty"<<endl;
     
     
+    //a.top();//получение значения с вершины стека
+    //a.pop();//удаление значения с вершины стека
+
     return 0;
 }
