@@ -18,7 +18,7 @@ void dqprint(T deq){
 
 int main(int argc, char const *argv[])
 {
-    deque<int> dq;
+    deque<int> dq;//создание двусторонней очереди
     deque<int> dq2;
     
     dq.push_back(2);

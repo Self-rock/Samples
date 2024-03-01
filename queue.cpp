@@ -6,7 +6,7 @@ using namespace std;
 
 int main(int argc, char const *argv[])
 {
-    queue<int> q;
+    queue<int> q;//создание очереди
     deque<int> q2;
     q.push(1);
     q.push(2);
