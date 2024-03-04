@@ -74,6 +74,7 @@ for_each();
     
     //возвращает итератор на минимальный элемент контейнера
     cout << "min_element test "<<*min_element(test.begin(), test.end())<<endl;
+    //min(nums.begin(), nums.end()));//тоже работает
     //возвращает итератор на максимальный элемент контейнера
     cout << "max_element test "<<*max_element(test.begin(), test.end())<<endl;
 
