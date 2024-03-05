@@ -52,7 +52,7 @@ int main()
     cout<<"result "<<result<<endl;
     result.set();//устанавливаем все быты в 1
     cout<<"result after result.set() "<<result<<endl;
-    result.set(3, 0);
+    result.set(3, 0);//устанавливает в ноль третий бит
     cout<<"result after result.set(3, 0) "<<result<<endl;
     result.reset();//сбрасывает все быты в 0
     cout<<"result after result.reset() "<<result<<endl;
