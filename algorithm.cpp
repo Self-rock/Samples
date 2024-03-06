@@ -1,6 +1,7 @@
 #include <iostream>
 #include <string>
 #include <algorithm>
+#include <vector>
 using namespace std;
 
 int main()
@@ -53,7 +54,7 @@ for_each();
     find_first_of();
     adjacent_find();
     count();//  count(str.begin(), str.end(), 'x')
-    count_if();
+    
     search();
     search_n();
     transform();  transform(str.begin(), str.end(), str.begin(), ::toupper);//массив в верхний регистр
@@ -72,6 +73,11 @@ for_each();
     set_intersection(); 
     */
     
+    int compare=2;//подсчет количества совпаденийс условием в лямбде
+    vector<int> count_str {1,2,3,6,5,2,3,9,7,2,3,6,4,2,8,9,3,4};
+    int intcomp = count_if(count_str.begin(), count_str.end(), [compare](int x){return x==compare;});
+    cout << "count_if... "<<intcomp<<endl;
+
     //возвращает итератор на минимальный элемент контейнера
     cout << "min_element test "<<*min_element(test.begin(), test.end())<<endl;
     //min(nums.begin(), nums.end()));//тоже работает
