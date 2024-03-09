@@ -9,7 +9,7 @@
 #define BIT_IS_SET(val, bitIndex) (val & (1 << bitIndex)) // проверка значения бита (в единице ли он)
 //напр if (BIT_IS_SET(macr, 1)) printf("%d\n", macr); если бит 1 в macr не ноль выполнямем принтф 
 
-//#define _BV(bit) (1 << bit) //Возвращает 2 в степени bit
+//#define _BV(bit) (1 << bit) //Возвращает 2 в степени bit (сдвиг влево, умножение на2)
 //#define BIT_IS_CLEAR(val, bit) (~val) & _BV(bit) //проверка значения бита (в нуле ли он) требует макроса _BV (не работает)
 
 /*
