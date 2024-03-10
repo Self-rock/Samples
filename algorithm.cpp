@@ -126,3 +126,9 @@ for_each();
     //sort(vecvec.begin(), vecvec.end(), [](vector<int>& a, vector<int>& b){return a[1]<b[1];});
     return 0;
 }
+
+//определение гласных букв
+ //bool is_vovel(char c){
+ //       if(c == 'a' || c == 'e' || c == 'i' || c == 'o' || c == 'u') return true;
+ //       return false;
+ //   }
