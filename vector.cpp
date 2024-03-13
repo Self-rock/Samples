@@ -14,6 +14,7 @@ for (auto i : v) {
 int main(int argc, const char** argv) {
     //vector<vector<int>> result;
     //result.push_back({});//добавление вектора в вектор векторов
+    //vector<vector<int>> vecvec(3, vector<int>(5));// создание вектора векторов 3х5
     
     vector <int> ivec={1,2,3,4,5,6,7,8,9};//создаем вектор  целых чисел
     vector <string> svec={"Vova","V","o","v","a"};//создаем вектор строк
