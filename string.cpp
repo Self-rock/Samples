@@ -124,6 +124,11 @@ int main()
     float fl = stof(Sstrtofloat);
     cout << "float fl = " <<fl << endl;
 
+    //определение размера строки. length вроде работает быстрее
+    //s.length();
+    //s.size();
+    
+    
     cin >>in;
     return 0;
 }
