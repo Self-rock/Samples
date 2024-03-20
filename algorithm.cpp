@@ -73,6 +73,10 @@ for_each();
     set_intersection(); 
     */
     
+    std::vector<int> vec = {1, 2, 2, 3, 4, 4, 5};
+    auto last = unique(vec.begin(), vec.end());//собирает уникальные эл-ты в начало, и возвращает указательна первый не уникальный эл-т
+    vec.erase(last, vec.end());//удаляет элементы с указателя на первый не уникальный, по конец контейнера
+    
     int compare=2;//подсчет количества совпаденийс условием в лямбде
     vector<int> count_str {1,2,3,6,5,2,3,9,7,2,3,6,4,2,8,9,3,4};
     int intcomp = count_if(count_str.begin(), count_str.end(), [compare](int x){return x==compare;});
