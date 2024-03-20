@@ -23,7 +23,6 @@ int main()
     partition_copy();
     remove();
     remove_if();
-    unique();
     reverse(); //reverse(begin(str), end(str));
     reverse_copy();
     rotate(); //rotate(str.begin(), str.begin() + 1, str.end()); поворот строки str на 1 символ
