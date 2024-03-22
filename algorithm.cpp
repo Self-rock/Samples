@@ -54,7 +54,7 @@ for_each();
     adjacent_find();
     count();//  count(str.begin(), str.end(), 'x')
     
-    search();
+    
     search_n();
     transform();  transform(str.begin(), str.end(), str.begin(), ::toupper);//массив в верхний регистр
     replace();
@@ -135,3 +135,8 @@ for_each();
  //       if(c == 'a' || c == 'e' || c == 'i' || c == 'o' || c == 'u') return true;
  //       return false;
  //   }
+ 
+
+
+ //auto it = std::search(gde_ishem.begin(), gde_ishem.end(), chto_ishem.begin(), chto_ishem.end());//возвращает итератор на начало вхождения найденой строки
+ //   std::distance(haystack.begin(), it); //возвращает дистанцию между итераторами
