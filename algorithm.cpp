@@ -141,6 +141,13 @@ for_each();
  //auto it = std::search(gde_ishem.begin(), gde_ishem.end(), chto_ishem.begin(), chto_ishem.end());//возвращает итератор на начало вхождения найденой строки
  //   std::distance(haystack.begin(), it); //возвращает дистанцию между итераторами
 
-//std::vector<int>::iterator it; итератор, который будет указывать на найденый элемент
-//it = std::includes(v.begin(), v.end(), {2, 4});определение того, содержит ли указанный контейнер определенную последовательность элементов 2, 4
-//if (it == v.end()) { cout << "The sequence is not present in the vector\n"; } если последовательность не найдена
+
+//#include <bits/stdc++.h> //includes() требует
+//vector<int> arr1{ 3, 5, 7, 9 };
+//vector<int> arr2{ 5, 9 };
+//if (includes(arr1.begin(), arr1.end(), arr2.begin(), arr2.end()))//определение того, содержит ли указанный контейнер определенную последовательность элементов
+//cout << "arr1 contains arr2\n";// ищем в arr1 входждение arr2
+//else
+//cout << "arr1 doesn't contain arr2\n";
+    
+
