@@ -146,8 +146,8 @@ for_each();
 //vector<int> arr1{ 3, 5, 7, 9 };
 //vector<int> arr2{ 5, 9 };
 //if (includes(arr1.begin(), arr1.end(), arr2.begin(), arr2.end()))//определение того, содержит ли указанный контейнер определенную последовательность элементов
-//cout << "arr1 contains arr2\n";// ищем в arr1 входждение arr2
+//cout << "arr1 contains arr2\n";// ищем в arr1 входждение arr2 (не обязательно последовательно, но обязательно в полном составе)
 //else
-//cout << "arr1 doesn't contain arr2\n";
+//cout << "arr1 doesn't contain arr2\n";// возвращает bool
     
 
