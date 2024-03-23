@@ -34,7 +34,7 @@ int main()
     equal_range();
     binary_search();
     inplace_merge()
-    includes();
+    
     next_permutation();
     prev_permutation();
     replace_copy();
@@ -140,3 +140,7 @@ for_each();
 
  //auto it = std::search(gde_ishem.begin(), gde_ishem.end(), chto_ishem.begin(), chto_ishem.end());//возвращает итератор на начало вхождения найденой строки
  //   std::distance(haystack.begin(), it); //возвращает дистанцию между итераторами
+
+//std::vector<int>::iterator it; итератор, который будет указывать на найденый элемент
+//it = std::includes(v.begin(), v.end(), {2, 4});определение того, содержит ли указанный контейнер определенную последовательность элементов 2, 4
+//if (it == v.end()) { cout << "The sequence is not present in the vector\n"; } если последовательность не найдена
