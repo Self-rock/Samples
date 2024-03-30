@@ -33,8 +33,7 @@ int main()
     upper_bound();
     equal_range();
     binary_search();
-    inplace_merge()
-    
+    inplace_merge()    
     next_permutation();
     prev_permutation();
     replace_copy();
@@ -52,7 +51,7 @@ for_each();
     find_if();
     find_first_of();
     adjacent_find();
-    count();//  count(str.begin(), str.end(), 'x')
+    
     
     
     search_n();
@@ -72,9 +71,13 @@ for_each();
     set_intersection(); 
     */
     
+
+
     std::vector<int> vec = {1, 2, 2, 3, 4, 4, 5};
     auto last = unique(vec.begin(), vec.end());//собирает уникальные эл-ты в начало, и возвращает указательна первый не уникальный эл-т
     vec.erase(last, vec.end());//удаляет элементы с указателя на первый не уникальный, по конец контейнера
+    
+    //count(v.begin(), v.end(), 8);//считает кол во 8  в контейнере//  count(str.begin(), str.end(), 'x')//считает чивло символов x в контейнере
     
     int compare=2;//подсчет количества совпаденийс условием в лямбде
     vector<int> count_str {1,2,3,6,5,2,3,9,7,2,3,6,4,2,8,9,3,4};
