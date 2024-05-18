@@ -26,8 +26,16 @@ int main()
     string parsed_str {"123"};//строка для сравнения
     if (regex_match(parsed_str, my_regex)) cout<<"matched"<<endl; //совпадение если регекс сработал
     else cout<<"not matched"<<endl;//не совпадение если регекс не сработал
-    return 0;
+    
+	string str{"1934923"};//исходная строка
+	regex pattern("9");// создаем паттерн, который будем заменять
+	str = regex_replace(str, pattern, "8");//заменяем паттерн найденый в строке на третий аргумент
+	cout<<"str "<<str<<endl;//выводим строку
+
+	return 0;
 }
+
+
 
 /*
 abc… 	Letters
