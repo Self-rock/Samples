@@ -84,6 +84,13 @@ for_each();
     int intcomp = count_if(count_str.begin(), count_str.end(), [compare](int x){return x==compare;});
     cout << "count_if... "<<intcomp<<endl;
 
+    //подсчет русских букв в смешаном русско-латинском стринге
+    u32string strRuEn{U"kdsпajfkaпdsп fkпasdj ksпппadj fkпsdaj f"};
+    auto pred = [](char32_t a){
+        return a==L'п'?1:0;
+    };    
+    cout<<"simbols п in string = "<< count_if(strRuEn.begin(), strRuEn.end(), pred)<<endl;
+
     //возвращает итератор на минимальный элемент контейнера
     cout << "min_element test "<<*min_element(test.begin(), test.end())<<endl;
     //min(nums.begin(), nums.end()));//тоже работает
