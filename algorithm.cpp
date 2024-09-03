@@ -119,6 +119,7 @@ for_each();
     sort(begin(str), end(str));//универсальный вариант сортировки
     cout<<str<<endl;
 
+    
     //сорт со своим оператором сравнения 
     /* создаем свой оператор сравнения
     static bool comparator(int &a  , int & b){

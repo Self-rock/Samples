@@ -99,5 +99,13 @@
         "C:\\Users\\Selfrock\\Desktop\\C++",
         "C:\\Users\\Selfrock\\Desktop\\C++\\Samples",
         "C:\\Users\\Selfrock\\Desktop\\C++\\01"
+    ],
+    "makefile.configureOnOpen": true,
+    "makefile.launchConfigurations": [
+        {
+            "cwd": "c:\\Users\\Selfrock\\Desktop\\C++\\Samples",
+            "binaryPath": "c:\\Users\\Selfrock\\Desktop\\C++\\Samples\\bitset",
+            "binaryArgs": []
+        }
     ]
 }
