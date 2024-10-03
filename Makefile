@@ -1,7 +1,7 @@
 #Выбираем компилятором g++
 CC = g++
 #Определяем флаги компиляции, для работы с дебагером gdb добавить флаг -g
-CFLAGS = -std=c++17 -Wall -Wextra -g
+CFLAGS = -std=c++20 -Wall -Wextra -g
 #CXXFLAGS: Extra flags to give to the C++ compiler
 #CPPFLAGS: Extra flags to give to the C preprosessor
 #-g -g3 уровни отладки, оптимизация O0, O1, O2, Og, Os
@@ -39,6 +39,6 @@ all: $(EXECUTABLES)
 		
 #Удаляем результирующий файл и все объектные файлы
 clean:
-	rm -f *.s *.o *.exe
+	rm -f *.s *.o *.exe MyFile.txt
 	
 

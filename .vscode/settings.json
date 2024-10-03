@@ -93,7 +93,8 @@
         "variant": "cpp",
         "stacktrace": "cpp",
         "expected": "cpp",
-        "spanstream": "cpp"
+        "spanstream": "cpp",
+        "filesystem": "cpp"
     },
     "projectManager.git.baseFolders": [
         "C:\\Users\\Selfrock\\Desktop\\C++",

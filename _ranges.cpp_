@@ -1,0 +1,21 @@
+#include <iostream>
+#include <vector>
+#include <ranges>
+#include <algorithm> // для std::ranges::sort
+
+int main() {
+    // Создаем вектор с некоторыми числами
+    std::vector<int> numbers = {5, 3, 8, 1, 2, 7};
+
+    // Сортируем вектор с помощью std::ranges::sort
+    std::ranges::sort(numbers);
+
+    // Выводим отсортированные числа
+    std::cout << "Отсортированные числа: ";
+    for (const auto& num : numbers) {
+        std::cout << num << " ";
+    }
+    std::cout << std::endl;
+
+    return 0;
+}

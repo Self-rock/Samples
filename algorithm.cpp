@@ -71,7 +71,12 @@ for_each();
     set_intersection(); 
     */
     
-
+    /*  должно работать в 20 стандарте, тут не работает...
+    std::vector<int> erase_if_vec = {1, 2, 2, 3, 4, 4, 5};
+    erase_if(erase_if_vec, [](int n){return n%2==0;});
+    cout << "размер  erase_if_vec"<<erase_if_vec.size()<<endl;
+    for_each(erase_if_vec.begin(), erase_if_vec.end(), [](int a){ cout<<a<<" ";});
+    cout << endl; */
 
     std::vector<int> vec = {1, 2, 2, 3, 4, 4, 5};
     auto last = unique(vec.begin(), vec.end());//собирает уникальные эл-ты в начало, и возвращает указательна первый не уникальный эл-т

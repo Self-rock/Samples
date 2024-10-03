@@ -3,10 +3,11 @@
         {
             "type": "cppbuild",
             "label": "C/C++: g++.exe сборка активного файла",
-            "command": "H:\\Qt\\Tools\\mingw1120_64\\bing++.exe",
+            "command": "H:\\mingw64\bin\\g++.exe",
             "args": [
                 "-fdiagnostics-color=always",
-                "-g",                
+                "-g",
+                "-std=c++20",                
 				"${file}",				
                 "-o",
                 "${fileDirname}\\${fileBasenameNoExtension}.exe"
