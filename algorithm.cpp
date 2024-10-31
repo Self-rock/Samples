@@ -1,5 +1,6 @@
 #include <iostream>
 #include <string>
+#include <list>
 #include <algorithm>
 #include <vector>
 using namespace std;
@@ -10,7 +11,7 @@ int main()
     
     /*
     find_end();
-    all_of();
+    
     none_of();
     any_of();
     find_if_not();
@@ -124,6 +125,16 @@ for_each();
     sort(begin(str), end(str));//универсальный вариант сортировки
     cout<<str<<endl;
 
+    cout<<"front_inserter"<<endl;// начиная с c++20
+    list<int> lint{4,5,6};
+    cout<<"*lint.begin()="<<*lint.begin()<<endl;
+    *(front_inserter(lint))=18;
+    cout<<"*lint.begin() after *(front_inserter(lint))=18  ="<<*lint.begin()<<endl;
+    
+    //проверяем все элементы вектора на соответствие услвию
+    vector<int> ones ={1, 1, 1, 1, 1, 1};
+    if(all_of(ones.begin(), ones.end(), [](int i){return i==1;})) cout<<"al ones = 1";
+    
     
     //сорт со своим оператором сравнения 
     /* создаем свой оператор сравнения

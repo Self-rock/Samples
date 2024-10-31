@@ -35,5 +35,9 @@ int main(int argc, const char** argv) {
     //переименовываем обратно
     filesystem::rename("./filesistem2.cpp", "./filesistem.cpp");
     cout<<"файл переименован обратно"<<endl;
+
+    //переименование файла (не проверено)
+    //#include <cstdio>
+    //std::rename("old_name.txt", "new_name.txt");
     return 0;
 }
