@@ -48,7 +48,7 @@ int main()
     shuffle();
 for_each();
     for_each_n();
-    find();
+    
     find_if();
     find_first_of();
     adjacent_find();
@@ -56,14 +56,15 @@ for_each();
     
     
     search_n();
-    transform();  transform(str.begin(), str.end(), str.begin(), ::toupper);//массив в верхний регистр
+    transform(v.begin(), v.end(), [](int n){return n*2;});  //применяет лямбду к каждому элементу контейнера
+    transform(str.begin(), str.end(), str.begin(), ::toupper);//массив в верхний регистр
     replace();
     replace_if();
     generate();
     generate_n();
     unique_copy();
     random_shuffle();
-    partition();
+    partition(v.begin(), v.end(), [](int n){return n%2==0;}); //разделяет элементы по предикату
     partial_sort();
     nth_element();
     merge();
@@ -154,6 +155,13 @@ for_each();
 
     //сортировка вектора векторов по второму (индекс 1) элементу внутреннего вектора
     //sort(vecvec.begin(), vecvec.end(), [](vector<int>& a, vector<int>& b){return a[1]<b[1];});
+    
+    //auto it =  find(v.begin(), v.end(), 4); //находит первое вхождение 4 в векторе, возвращает итератор
+
+    //copy(v.begin(), v.end(), copyng.begin());// копирует один контейнер в другой (не проверено)
+
+    
+
     return 0;
 }
 
