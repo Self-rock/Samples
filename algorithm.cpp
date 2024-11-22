@@ -58,7 +58,7 @@ for_each();
     search_n();
     transform(v.begin(), v.end(), [](int n){return n*2;});  //применяет лямбду к каждому элементу контейнера
     transform(str.begin(), str.end(), str.begin(), ::toupper);//массив в верхний регистр
-    replace();
+    
     replace_if();
     generate();
     generate_n();
@@ -159,8 +159,13 @@ for_each();
     //auto it =  find(v.begin(), v.end(), 4); //находит первое вхождение 4 в векторе, возвращает итератор
 
     //copy(v.begin(), v.end(), copyng.begin());// копирует один контейнер в другой (не проверено)
-
     
+    vector<int> rep ={1, 2, 1, 2, 1, 2};
+    cout<<"\nrep befor \n";
+    for_each(rep.begin(), rep.end(), [](int a){cout<<a<<" \n";});
+    replace(rep.begin(), rep.end(), 2, 77);// замена значений в диапазоне
+    cout<<"rep after \n";
+    for_each(rep.begin(), rep.end(), [](int a){cout<<a<<" \n";});
 
     return 0;
 }
