@@ -70,7 +70,7 @@ for_each();
     merge();
     stable_sort();
     set_union();
-    set_intersection(); 
+    
     */
     
     /*  должно работать в 20 стандарте, тут не работает...
@@ -79,6 +79,8 @@ for_each();
     cout << "размер  erase_if_vec"<<erase_if_vec.size()<<endl;
     for_each(erase_if_vec.begin(), erase_if_vec.end(), [](int a){ cout<<a<<" ";});
     cout << endl; */
+
+    //set_intersection(vec1.begin(), vec1.end(), vec2.begin(), vec1.end(), back_inserter(vec_result))//позволяет найти пересечение двух отсортированных контейнеров. Результат записывается в другой контейнер.
 
     std::vector<int> vec = {1, 2, 2, 3, 4, 4, 5};
     auto last = unique(vec.begin(), vec.end());//собирает уникальные эл-ты в начало, и возвращает указательна первый не уникальный эл-т
