@@ -10,6 +10,6 @@ int main(int argc, char const *argv[])
     std::cout << "Число "<< std::any_cast<int>(v)<<std::endl;
     v =  std::string("Hello!");
     std::cout << "Строка "<< std::any_cast<std::string>(v)<<std::endl;
-
+    
     return 0;
 }
