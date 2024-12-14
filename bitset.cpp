@@ -79,6 +79,10 @@ int main()
     TOGGLE_BIT(test, 2);
     cout<<"test "<<test<<endl;
     cout<<"BIT_IS_SET(test, 2) "<<BIT_IS_SET(test, 2)<<endl;
+
+    bitset<4> b2("1010");
+    b2.flip();//инвертирование битов
+    cout<<b2<<"\n";
     
     return 0;
 }
