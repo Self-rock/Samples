@@ -34,8 +34,7 @@ int main()
     upper_bound();
     equal_range();
     binary_search();
-    inplace_merge()    
-    next_permutation();
+    inplace_merge()
     prev_permutation();
     replace_copy();
     replace_copy_if();
@@ -168,6 +167,21 @@ for_each();
     replace(rep.begin(), rep.end(), 2, 77);// замена значений в диапазоне
     cout<<"rep after \n";
     for_each(rep.begin(), rep.end(), [](int a){cout<<a<<" \n";});
+
+
+    vector<string> str88(4);//заполнение массива из лямбды
+    generate(str88.begin(), str88.end(), [i=0]() mutable {return ++i %2 ? "odd" : "pair";});    
+    for(auto a:str88) cout<<a<<" ";
+    cout<<endl;
+
+    //перестановка элементов массива всеми вариантами
+    std::vector<int> pvint{10, 20, 30};
+    for(int i=0; i<(pvint.size()*(pvint.size()-1)); ++i){
+        for(auto i:pvint) std::cout<<i<<" ";
+        std::next_permutation(pvint.begin(), pvint.end());
+        std::cout<<std::endl;
+    }
+
 
     return 0;
 }
