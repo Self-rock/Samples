@@ -1,5 +1,5 @@
 #Выбираем компилятором g++
-CC = g++
+CC = H:/msys2_x86_64_2024/ucrt64/bin/g++
 #Определяем флаги компиляции, для работы с дебагером gdb добавить флаг -g
 CFLAGS = -std=c++20 -Wall -Wextra -g
 #CXXFLAGS: Extra flags to give to the C++ compiler
