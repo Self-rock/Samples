@@ -174,6 +174,7 @@ for_each();
     cout<<endl;
 
     //перестановка элементов массива всеми вариантами
+    
     std::vector<int> pvint{10, 20, 30};
     for(int i=0; i<(pvint.size()*(pvint.size()-1)); ++i){
         for(auto i:pvint) std::cout<<i<<" ";
@@ -198,12 +199,12 @@ std::remove_if — это алгоритм, который перемещает 
        v12.end()
    );
 
-
+   
 
 
     return 0;
 }
-
+//
 //определение гласных букв
  //bool is_vovel(char c){
  //       if(c == 'a' || c == 'e' || c == 'i' || c == 'o' || c == 'u') return true;
