@@ -119,8 +119,24 @@ public:
 
 int main(int argc, const char** argv) {
     
-MyString m("трям");
-std::cout<<m;
+    MyString s;
+    std::cout<<"s.lenght = "<<s.lenght()<<std::endl;
+
+    MyString a("Hello");
+    MyString b(" world");
+    MyString c = a + b;
+    std::cout<<"concatenated a and b = "<<c<<std::endl;
+    std::cout<<"c.lenght = "<<c.lenght()<<std::endl;
+    std::cout<<"C string = "<<c.cstr()<<std::endl;
+    std::cout<<"char at index 0 "<<c[0]<<std::endl;
+    
+    MyString d("Hello world");
+    std::cout<<"c == d : "<<(c==d ? "True" : "False")<<std::endl;
+    
+    MyString e = std::move(c);
+    std::cout<<"moved string: "<<e<<std::endl;
+    std::cout<<"original string, after move: "<<c<<std::endl;
+
 
     return 0;
 }
