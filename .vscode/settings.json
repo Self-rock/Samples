@@ -108,5 +108,6 @@
             "binaryPath": "c:\\Users\\Selfrock\\Desktop\\C++\\Samples\\bitset",
             "binaryArgs": []
         }
-    ]
+    ],
+    "codium.codeCompletion.enable": false
 }
