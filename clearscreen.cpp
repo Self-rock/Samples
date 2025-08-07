@@ -1,6 +1,6 @@
 #include <iostream>
 #include <cstdlib>
-
+//#define WINDOWS
 void clear_screen()
 {
 #ifdef WINDOWS
