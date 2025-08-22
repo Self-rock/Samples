@@ -4,7 +4,7 @@
             "name": "Win32",
             "includePath": [
                 "${workspaceFolder}/**",
-                "H:\\boost_1_85_0"
+                "H:\\boost_1_87_0"
             ],
             "defines": [
                 "_DEBUG",
