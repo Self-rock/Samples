@@ -226,3 +226,14 @@ std::remove_if — это алгоритм, который перемещает 
 //cout << "arr1 doesn't contain arr2\n";// возвращает bool
     
 
+//Сортировка обычного массива с помощью sort
+/*
+void sorted_int(int* ar, size_t len_ar, TYPE_SORT type) {
+        if (type == sort_asc) {//если сортировка на возрастание
+            std::sort(ar, ar + len_ar);
+        } else if (type == sort_desc) {//если сортировка на убывание
+            std::sort(ar, ar + len_ar, std::greater<int>());
+        }
+    }
+
+*/
