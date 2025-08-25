@@ -18,6 +18,11 @@ int main(int argc, char const *argv[])
 std::cout<<std::setprecision(0)<<std::fixed;//сбрасываем точность после запятой
     std::cout <<"answer2="<<answer2 << std::endl;
 
+
+
+    //для установки локали для терминала, перед cin cout применить
+    //system("chcp 65001");//для utf8 , или другую локаль, в которой сохранены исходники
+
     /*
     не проверено
     cout.setf(ios::fixed);
