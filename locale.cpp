@@ -6,6 +6,8 @@ using namespace std;
 
 int main()
 {
+    
+    
     //подсчет русских букв п в смешанной русско английской строке
     u32string str{U"kdsпajfkads fkasdj ksпппadj fkпsdaj f q"};
     auto pred = [](char32_t a){
@@ -27,6 +29,6 @@ int main()
 
     //для установки локали для терминала, перед cin cout применить
     //system("chcp 65001");//для utf8 , или другую локаль, в которой сохранены исходники
-
+    //system("chcp 65001 > nul"); то же самое, чтобы консоль не выводила сообщение "Active code page: 65001"
     return 0;
 }
