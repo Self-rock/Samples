@@ -232,7 +232,7 @@ void sorted_int(int* ar, size_t len_ar, TYPE_SORT type) {
         if (type == sort_asc) {//если сортировка на возрастание
             std::sort(ar, ar + len_ar);
         } else if (type == sort_desc) {//если сортировка на убывание
-            std::sort(ar, ar + len_ar, std::greater<int>());
+            std::sort(ar, ar + len_ar, std::greater<int>());//не забыть изменить тип на актуальный
         }
     }
 
