@@ -239,3 +239,10 @@ void sorted_int(int* ar, size_t len_ar, TYPE_SORT type) {
 */
 
 //int a= (rand()) / RAND_MAX * (200) - 100; //получение случайного числа от -100 до 100 включительно
+
+
+/*еще вариант генерации случайных чисел в диапазоне
+int start = 10;
+int end = 30;
+int x = rand() % (end - start + 1) + start;
+*/
