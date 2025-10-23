@@ -125,6 +125,7 @@ for_each();
     //sort(str.begin(), str.end());//не универсальный вариант
     sort(begin(str), end(str));//универсальный вариант сортировки
     cout<<str<<endl;
+    //sort(begin(str), end(str), greater{});//сортировка по убыванию
 
     cout<<"front_inserter"<<endl;// начиная с c++20
     list<int> lint{4,5,6};
