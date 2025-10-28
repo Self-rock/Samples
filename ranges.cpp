@@ -12,6 +12,9 @@ int main(int argc, char const *argv[])
     auto it = std::ranges::find(v, 223);//поиск элемента, возвращает итератор на найденый элемент или итератор на конец контейнера, если не нашел.
     if(it!=v.end()) std::cout<<"std::ranges::find, find 223\n";
 
+    int count = std::ranges::count(v, 1);
+    std::cout<<"in v ranges count 1... = "<<count<<"\n";
+
     for(auto elem:v 
         | std::views::drop_while(lessthantwo) //отсеивает пока не встретит первый не соответствующие предикату (в данном случ. меньше 2)
         | std::views::transform([](auto& e){return e*2;})) std::cout<<elem<<" ";//удваивает в views а не в векторе (меняет в векторе return e*=2)
