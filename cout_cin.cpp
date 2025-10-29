@@ -117,5 +117,16 @@ std::cout<<std::setprecision(0)<<std::fixed;//сбрасываем точнос�
 
     freopen("output.txt", "w", stdout); // перенаправление cout в файл
     */
+    
+    //вывод имени переменной в выводе
+    #define debug(x) std::cout <<"Переменная " <<(#x)<<" = "<< x <<std::endl;
+    int aa =18;
+    debug(aa);
+    struct A{int z; float y;};
+    A q;
+    debug(q.y);
+    debug(q.z);
+
+    
     return 0;
 }

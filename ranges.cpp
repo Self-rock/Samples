@@ -8,11 +8,15 @@ int main(int argc, char const *argv[])
     auto lessthantwo = [](auto e){return e<2;};
     
     std::vector<int> v{1,1,1,223,1,2,3,4,5,7,8,0};
+    std::vector<int> vv{1,1,1,223,1,2,3,4,5,7,8,0};
+
+    if(std::ranges::equal(v, vv)) std::cout<<"ranges v and vv equal\n";//проверяем равны ли ранжи
+    else std::cout<<"ranges v and vv not equal\n";
 
     auto it = std::ranges::find(v, 223);//поиск элемента, возвращает итератор на найденый элемент или итератор на конец контейнера, если не нашел.
     if(it!=v.end()) std::cout<<"std::ranges::find, find 223\n";
 
-    int count = std::ranges::count(v, 1);
+    int count = std::ranges::count(v, 1);//считаем сколько в ранже единичек
     std::cout<<"in v ranges count 1... = "<<count<<"\n";
 
     for(auto elem:v 
