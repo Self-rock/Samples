@@ -200,7 +200,11 @@ std::remove_if — это алгоритм, который перемещает 
        v12.end()
    );
 
-   
+    cout<<"\nFill \n";
+    std::vector<int> nums{0, 1, 2, 3, 4, 5, 6, 7, 8};
+    fill(nums.begin(), nums.end(), 4);//заполнение массива значениями
+    for_each(nums.begin(), nums.end(), [](int a){cout<<a<<" \n";});
+    cout<<"n";
 
 
     return 0;
