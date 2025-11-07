@@ -247,6 +247,8 @@ void sorted_int(int* ar, size_t len_ar, TYPE_SORT type) {
 
 
 /*еще вариант генерации случайных чисел в диапазоне
+cin>>a;
+srand(a);//задаем начальное значение
 int start = 10;
 int end = 30;
 int x = rand() % (end - start + 1) + start;

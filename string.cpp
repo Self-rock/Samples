@@ -1,5 +1,6 @@
 #include <iostream>
 #include <string>
+#include <string_view>
 #include <algorithm>
 using namespace std;
 
@@ -104,7 +105,7 @@ int main()
     cout << "heshmesh = " <<heshmesh << endl;//считать евсли выполняется условие (return 'S'==c)
 	cout << "in app have S " << std::count_if(app.begin(),app.end(),[](char c){ return 'S'==c;})<< endl;
     cout << "app= " <<app << endl;
-    remove(app.begin(), app.end(), '-');// app.end(); //удаление - из массива app
+    auto nd = remove(app.begin(), app.end(), '-');// app.end(); //удаление - из массива app
     cout << "app after remove(app.begin(), app.end(), '-'), app.end() = " <<app << endl;
     reverse(app.begin(), app.end()); // разворечиваем послед символов в массиве на противоположную
     cout << "app after reverse(app.begin(), app.end()) = " <<app << endl;
@@ -127,6 +128,11 @@ int main()
     //определение размера строки. length вроде работает быстрее
     //s.length();
     //s.size();
+    
+/*пока не работает (вроде работает с target_link_libraries(${PROJECT_NAME}  "-lstdc++exp") и set(CMAKE_CXX_STANDARD 23) set(CMAKE_CXX_STANDARD_REQUIRED ON))
+std::string_view cmd = "quit_application";
+    if(cmd.ends_with("ion")) cout<<"\nКоманда выхода\n";
+*/
     
     
     cin >>in;
