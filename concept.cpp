@@ -1,12 +1,12 @@
 #include <iostream>
 #include <string>
 #include <vector>
-#include <type_traits>
+#include <type_traits>//для концептов
 
 using namespace std;
 template <class T>
-concept Sumable = requires(T t){
-    t + t;
+concept Sumable = requires(T t){//создаем концепт
+    t + t;//проверяемое выражение
 };
 
 template <Sumable T>
@@ -23,6 +23,8 @@ int main(int argc, char const *argv[])
     vector<int> a{1, 2, 3}; 
     vector<int> b{4, 5, 6};
     //vector<int> c = sum(a, b);//тоже ошибка
+    
+    
     return 0;
 }
 
