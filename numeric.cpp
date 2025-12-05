@@ -32,7 +32,9 @@ int main()
     cout<<"multiply lint = "<<result<<endl;
 
     
-    
+    vector<int> vint{0, 0, 0, 0, 0};
+    iota(vint.begin(), vint.end(), 8);//заполняет вектор значениями от 8  и далее до конца вектора
+    ContPtint(vint);
 
     return 0;
 }
