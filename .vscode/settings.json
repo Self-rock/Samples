@@ -109,5 +109,6 @@
             "binaryArgs": []
         }
     ],
-    "codium.codeCompletion.enable": false
+    "codium.codeCompletion.enable": false,
+    "C_Cpp.errorSquiggles": "disabled"
 }

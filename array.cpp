@@ -1,6 +1,11 @@
 #include <iostream>
-#include <iomanip> // Для форматирования вывода (необязательно)
+#include <vector>
+#include <array>
 
+#include <span>//для передачи классического массива в функцию одним параметром
+
+#include <iomanip> // Для форматирования вывода (необязательно)
+#include <algorithm>// для for_each
 /**
  * Функция для вывода содержимого двумерного массива в консоль.
  * Использует шаблон для автоматического определения количества строк (R)
@@ -22,6 +27,19 @@ void print2DArray(T (&array)[R][C]) {
         std::cout << std::endl; // Переход на новую строку после ряда
     }
     std::cout << std::endl;
+}
+
+void ConstPrintOnPar(std::span<const int> data) {//печатаем массив, массив константный
+    for (int x : data) {
+        std::cout<<x<<" ";
+    }
+    std::cout<<std::endl;
+}
+
+void DoubleElMass(std::span<int> data) {//удваиваем элементы массива
+    for (int& x : data) {
+        x *= 2;
+    }
 }
 
 // Пример использования:
@@ -50,5 +68,35 @@ int main() {
     };
     print2DArray(arr3); // Компилятор автоматически определит R=4, C=2
 
+
+    std::cout<<std::endl<<"Печатаем массив"<<std::endl;
+
+    std::vector<int> v{1, 2, 3};
+    std::array<int, 3> a{4, 5, 6};
+    int raw[] = {7, 8, 9};
+
+    ConstPrintOnPar(v);    // std::vector
+    ConstPrintOnPar(a);    // std::array
+    ConstPrintOnPar(raw);  // C-массив
+   
+    //удваиваем
+    DoubleElMass(v);    // std::vector
+    DoubleElMass(a);    // std::array
+    DoubleElMass(raw);  // C-массив
+
+    //снова печатаем
+    std::cout<<std::endl<<"Печатаем массив"<<std::endl;
+    ConstPrintOnPar(v);    // std::vector
+    ConstPrintOnPar(a);    // std::array
+    ConstPrintOnPar(raw);  // C-массив
+    
+
+    std::cout<<std::endl<<"for(auto i:a)"<<std::endl;
+    int aa[]{1,2,3,4,5,6,7,8,9};
+    for(auto i:aa) std::cout<<i<<" ";//в функцию не передается, только через span
+    std::cout<<std::endl;
+    
+    std::cout<<std::endl<<"for_each"<<std::endl;
+    std::for_each(std::begin(aa), std::end(aa), [](int aa){std::cout<<aa<<" ";});//в функцию не передается, только через span
     return 0;
 }

@@ -3,6 +3,7 @@
 #include <ranges>
 #include <algorithm> //нужен для ranges::sort
 
+
 int main(int argc, char const *argv[])
 {
     auto lessthantwo = [](auto e){return e<2;};
@@ -35,6 +36,7 @@ int main(int argc, char const *argv[])
     std::cout << std::endl;
     
     
+
     return 0;
 }
 

@@ -18,6 +18,8 @@ int main(int argc, char const *argv[])
     return 0;
 }
 
+//fgets(buf, MAXLEN, stdin); //получение строки максимальной длинны MAXLEN, из stdin, в буфер char buf[MAXLEN+1]
+//позволяет ввести строку в стиле С, которая включает пробелы
 
 //  void* memmove( void* dest, const void* src, std::size_t count );
 /*
@@ -31,39 +33,44 @@ char str[] = "1234567890";
 */
 
 /*
-strcpy 
-copies one string to another
+char* strcpy(char* dest, const char* source)  - копирует строку source в строку dest. 
+Результат функции – указатель на результирующую строку (он равен указателю на dest). 
+Можно результат функции проигнорировать. Аргументы этой функции должны быть строками, т.е. содержать нулевой байт. 
+В Visual Studio нужно использовать  strcpy_s().
 
-strncpy 
-copies a certain amount of characters from one string to another
+char* strncpy(char* dest, const char* source, size_t num) - копирует не более num символов из строки source в начало строки dest. 
+Если нулевой байт не вошел в число копируемых символов, то результат будет содержать «микс» из старого и нового содержимого строки.
 
-strcat 
-concatenates two strings
+char* strcat(char* dest, const char* source) - конкатенация (объединение) строки source со строкой dest . 
+Результат сохраняется в  dest (нуль-символ добавляется в конец). Фактически строка source копируется в конец строки dest. 
+Программист должен позаботиться о том, чтобы объединенная строка поместилась в память, 
+отведенную под dest (если соседняя память будет испорчена, то возникнет ошибка времени выполнения). 
+В Visual Studio нужно использовать  strcat_s().
 
-strncat 
-concatenates a certain amount of characters of two strings
+char* strncat(char* dest, char* source, size_t num) - добавляет в конец  строки dest не более num символов из строки source.  
+Нуль-символ остается “в наследство” от строки dest 
+(т.е. символы строки-источника фактически вставляются между последним значащим символом dest и нулевым байтом). 
+В Visual Studio нужно использовать  strncat_s().
 
 strxfrm 
 transform a string so that strcmp would produce the same result as strcoll
 String examination
 
-strlen 
-returns the length of a given string
+size_t strlen(char* s)  - вычисляет количество значимых символов в строке (‘\0’ не учитывается). 
 
-strcmp 
-compares two strings
+int strcmp(const char* s1, const char* s2) – сравнивает две строки в лексикографическом порядке. 
+Возвращает отрицательное число, если s1<s2, ноль, если s1==s2 и положительное число, если s1>s2.
 
-strncmp 
-compares a certain number of characters from two strings
+int strncmp(const char* s1, const char* s2, size_t num) -  сравнивает первые num символов строки s1 с первыми num символами строки  s2. 
+Сравнение в лексикографическом порядке и результат аналогичен функции strcmp.
 
 strcoll 
 compares two strings in accordance to the current locale
 
-strchr 
-finds the first occurrence of a character
+char* strchr(const char* s, int c) – ищет в строке s первое вхождение символа c, начиная с начала строки. 
+В случае успеха возвращает указатель на найденный символ, иначе – возвращает NULL (это функция C, а nullptr появился в С++)
 
-strrchr 
-finds the last occurrence of a character
+char* strrchr(const char* s, int c) – аналогично предыдущему, только поиск осуществляется с конца строки.
 
 strspn 
 returns the length of the maximum initial segment that consists
@@ -76,12 +83,16 @@ of only the characters not found in another byte string
 strpbrk 
 finds the first location of any character from a set of separators
 
-strstr 
-finds the first occurrence of a substring of characters
+char* strstr(const char* s1, const char* s2) – ищет в строке s1 подстроку s2. 
+Возвращает указатель на первый символ подстроки внутри s1. Если подстрока отсутствует – возвращает NULL.
 
-strtok 
-finds the next token in a byte string
-Character array manipulation
+char* strtok(char* s1, const char* s2) - Делит исходную строку s1 на лексемы (подстроки), разделенные символами из строки s2.  
+Если лексема не найдена, возвращается NULL.
+Во время первого вызова функции strtok() в качестве указателя в самом деле используется s1. 
+При последующих вызовах в качестве первого аргумента используется NULL. Таким образом вся строка может быть разбита на лексемы.
+Важно понимать, что функция strtok() модифицирует строку, на которую указывает s1. 
+Каждый раз, когда найдена лексема, на месте, где был найден ограничитель, помещается нулевой символ. 
+Таким образом strtok() продвигается вдоль строки.
 
 memchr 
 searches an array for the first occurrence of a character
@@ -97,4 +108,18 @@ copies one buffer to another
 
 memmove 
 moves one buffer to another
+
+int atoi(const char* s) – преобразует строку s в число типа int. 
+Возвращает значение или нуль, если число преобразовать нельзя. 
+Заголовочный файл <stdlib.h> - подключается автоматически.
+
+long atol(const char* s) - преобразует строку s в число типа long. 
+Возвращает значение или нуль, если число преобразовать нельзя. Заголовочный файл <stdlib.h>
+
+double atof(const char* s) - преобразует строку s в вещественное число типа double. 
+Возвращает значение или нуль, если число преобразовать нельзя. В строке дробная часть должна отделяться точкой.  
+Число может быть представлено как в экспоненциальном формате (с символом 'e'), так и с фиксированной точкой. 
+Заголовочный файл <stdlib.h>
+
+
 */

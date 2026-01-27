@@ -132,5 +132,15 @@ std::cout<<std::setprecision(0)<<std::fixed;//сбрасываем точнос�
     
 
     
+
+    //getline(cin, str); //Чтобы ввести строку с пробелами
+    //getline(cin, mystring, razdelitel);// ввод из стандартного потока в строку mystring, до разделителя, если строка кончилась, вернет null
+
+    //string str = "моя строка";
+    //stringstream ss(str);  //поток в котором будет разделяемая строка  
+    //string t;// Временный объект для хранения разделённой строки    
+    //char del = ',';// Разделитель
+    //while (getline(ss, t, del)) делаем что то с куском строки в t;
+
     return 0;
 }
