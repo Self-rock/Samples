@@ -62,4 +62,15 @@ abc… 	Letters
 	(a(bc)) Capture Sub-group
 	(.*) 	  Capture all
 	(abc|def) 	Matches abc or def
+
+regex my_regex("[123...]*");// класс регекс, создаем в нем регулярное выражение
+
+regex_match(parsed_str, my_regex)//совпадение если регекс сработал (возвращает труе, если выражению соответствует всся строка)
+regex_match(a.begin(), a.end(), my_regex)
+regex_replace(str, pattern, "8");//заменяем паттерн найденый в строке на третий аргумент
+regex_replace(back_inserter(result), s.begin(), s.end(), r,  "geek");
+regex_search(str, pattern, "8");//возвращеет труе, если рег.выражению сответствует любая часть строки
+regex_search (s.cbegin(), s.cend(), m, pattern)
+regex_search(str, my_regex);
 */
+

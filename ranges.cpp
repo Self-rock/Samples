@@ -35,7 +35,22 @@ int main(int argc, char const *argv[])
     for (const auto& num : v)  std::cout << num << " ";
     std::cout << std::endl;
     
-    
+    std::vector<int> v2 = {1,2,3,4,5};
+    auto odds = v2 | std::views::filter([](int x){return x%2;});//фильтр по лямбде
+    for(int x:odds) std::cout<<x<<" ";
+    std::cout<<std::endl;
+
+    auto first_two = v2 | std::views::take(2);//берет первые два
+    for(int x:first_two) std::cout<<x<<" ";
+    std::cout<<std::endl;
+
+    auto rest = v2 | std::views::drop(2);//пропускает первые два
+    for(int x:rest) std::cout<<x<<" ";
+    std::cout<<std::endl;
+
+    for(int x:v2 | std::views::reverse) std::cout<<x<<" ";//итерация в обратном порядке
+    std::cout<<std::endl;
+
 
     return 0;
 }
