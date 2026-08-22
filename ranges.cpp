@@ -1,11 +1,39 @@
 #include <iostream>
 #include <vector>
+#include <list>
 #include <ranges>
+#include <print>
 #include <algorithm> //нужен для ranges::sort
 
 
+void psorted(const auto& v) {
+    if (std::ranges::is_sorted(v)) std::print("sorted: ");
+    else std::print("unsorted: ");
+    std::print(v);
+}
+
 int main(int argc, char const *argv[])
 {
+    //std::ranges::sort(v);
+    //std::ranges::reverse(v);
+
+    /*
+    vector<string> v1 {"alpha", "bravo", "charlie", "delta", "echo"};
+    printc(v1, "v1");
+    
+    vector<string> v2 {};
+    std::ranges::copy(v1, back_inserter(v2));
+    printc(v2, "v2");
+    */
+   
+    //std::ranges::copy_if(v1, back_inserter(v4), [](string& s){ return s.size() > 4; });
+
+    /*
+    ostream_iterator<string> out_it(cout, " ");
+    ranges::copy(v1, out_it);
+    */
+    
+    
     auto lessthantwo = [](auto e){return e<2;};
     
     std::vector<int> v{1,1,1,223,1,2,3,4,5,7,8,0};
@@ -35,6 +63,15 @@ int main(int argc, char const *argv[])
     for (const auto& num : v)  std::cout << num << " ";
     std::cout << std::endl;
     
+    
+
+    //join,- *выравнивание* (flattening) вложенных диапазонов. Другими словами, он берет диапазон диапазонов и превращает его в плоский диапазон.
+    std::vector<std::vector<int>> nested{{1, 2}, {3, 4, 5}, {6, 7}};
+    auto joined = std::views::join(nested);    
+    for (int i : joined)  std::cout<<i; // выведет 1 2 3 4 5 6 7
+    //join удаляет структурные границы между внутренними векторами, создавая единый диапазон. 
+    //При этом важно понимать, что join работает только с одним диапазоном диапазонов. Вы не можете передать ему два независимых контейнера
+        
     std::vector<int> v2 = {1,2,3,4,5};
     auto odds = v2 | std::views::filter([](int x){return x%2;});//фильтр по лямбде
     for(int x:odds) std::cout<<x<<" ";
@@ -52,6 +89,23 @@ int main(int argc, char const *argv[])
     std::cout<<std::endl;
 
 
+    auto vec = std::ranges::views::iota(1, 11) 
+        | std::ranges::views::transform([](const auto n){ return n * 5; }) 
+        | std::ranges::to<std::vector>();
+    for (auto n : vec) std::cout<<n<<" ";
+    std::cout<<"\n";
+
+    auto lst = vec | std::ranges::views::reverse
+        | std::ranges::to<std::list<double>>();
+    for (auto d : lst) std::cout<<d<<" ";
+    std::print("\n");
+
+
+
+
+
     return 0;
 }
+
+
 

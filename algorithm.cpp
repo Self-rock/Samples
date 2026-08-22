@@ -39,8 +39,8 @@ int main()
     replace_copy_if();
     is_sorted();
     is_sorted_until();
-    minmax();
-    minmax_element();
+    minmax();//на два конктерных элемента
+    minmax_element();//на диапазон
     is_permutation();
     clamp();
     shuffle();
@@ -159,7 +159,8 @@ for_each();
     
     //auto it =  find(v.begin(), v.end(), 4); //находит первое вхождение 4 в векторе, возвращает итератор
 
-    //copy(v.begin(), v.end(), copyng.begin());// копирует один контейнер в другой (не проверено)
+    //copy(v.begin(), v.end(), copyng.begin());// копирует один контейнер в другой 
+    //std::copy(from_vector.begin(), from_vector.end(), std::back_inserter(to_vector));
     
     vector<int> rep ={1, 2, 1, 2, 1, 2};
     cout<<"\nrep befor \n";

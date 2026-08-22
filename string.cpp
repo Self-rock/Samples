@@ -125,6 +125,14 @@ int main()
     float fl = stof(Sstrtofloat);
     cout << "float fl = " <<fl << endl;
 
+
+    const string s {"Big Light In Sky Slated To Appear In East"};
+    if (s.contains("Sky")) {
+       cout<<"Sky found\n";
+    } else {
+        cout<<"Sky not found\n";
+    }
+
     //определение размера строки. length вроде работает быстрее
     //s.length();
     //s.size();
